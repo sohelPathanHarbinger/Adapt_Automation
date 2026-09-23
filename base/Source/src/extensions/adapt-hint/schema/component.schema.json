@@ -1,0 +1,138 @@
+{
+  "$anchor": "hint-component",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "component"
+    },
+    "with": {
+      "properties": {
+        "_hint": {
+          "type": "object",
+          "title": "Hint",
+          "default": {},
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable Hint button",
+              "default": false
+            },
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "description": "Title displayed in the popup",
+              "default": "",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "altTitle": {
+              "type": "string",
+              "title": "Alternative title text",
+              "description": "Text read out by screen readers if no visual title is included in the popup",
+              "default": "",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "body": {
+              "type": "string",
+              "title": "Body",
+              "description": "Body text displayed in the popup",
+              "default": "",
+              "_adapt": {
+                "translatable": true
+              },
+              "_backboneForms": "TextArea"
+            },
+            "_imageAlignment": {
+              "type": "string",
+              "title": "Image alignment",
+              "description": "Defines the alignment of the pop up image. Left: Image aligned to the left of the text area. Top: Image aligned above the text area. Right: Image aligned to the right of the text area. Bottom: Image aligned below the text area. The default alignment is `right`.",
+              "default": "right",
+              "enum": [
+                "left",
+                "top",
+                "right",
+                "bottom"
+              ],
+              "_backboneForms": "Select"
+            },
+            "_graphic": {
+              "type": "object",
+              "title": "Graphic",
+              "default": {},
+              "properties": {
+                "_src": {
+                  "type": "string",
+                  "isObjectId": true,
+                  "title": "Source",
+                  "description": "Image displayed in the popup",
+                  "_backboneForms": {
+                    "type": "Asset",
+                    "media": "image"
+                  }
+                },
+                "alt": {
+                  "type": "string",
+                  "title": "Alternative text",
+                  "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                  "default": "",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "attribution": {
+                  "type": "string",
+                  "title": "Attribution",
+                  "description": "Text to be displayed as an attribution for the image",
+                  "default": "",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                }
+              }
+            },
+            "_button": {
+              "type": "object",
+              "title": "Hint button",
+              "properties": {
+                "_iconClass": {
+                  "type": "string",
+                  "title": "Icon class",
+                  "description": "Icon that displays on the button. Optional, use with/without text. CSS class name must be pre-defined.",
+                  "default": "icon-question"
+                },
+                "_alignIconRight": {
+                  "type": "boolean",
+                  "title": "Align icon right",
+                  "description": "Defines whether the icon is aligned to the left or right of the text.",
+                  "default": true
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Button text",
+                  "description": "Text that displays on the button. Optional, use with/without an icon.",
+                  "default": "Hint",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "title": "ARIA label",
+                  "description": "Text read out by screen readers if no visual button text is set.",
+                  "default": "",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

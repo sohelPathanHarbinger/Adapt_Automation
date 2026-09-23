@@ -1,0 +1,43 @@
+.article {
+  position: relative;
+}
+
+.trickle {
+  &__inner {
+    z-index: 80;
+  }
+
+  &__btn {
+    position: relative;
+    display: block;
+    margin: auto;
+  }
+
+  &.is-full-width &__btn {
+    width: 100%;
+  }
+
+  &__btn-icon .icon {
+    .icon-controls-small-down;
+  }
+
+  &__btn.is-locked &__btn-icon .icon {
+    .icon-padlock-locked;
+  }
+  
+  // If full width config is enabled, button is fixed to the bottom of the screen
+  // --------------------------------------------------
+  &.is-full-width &__inner {
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    html.is-nav-top & {
+      bottom: 0;
+    }
+
+    html.is-nav-bottom & {
+      bottom: var(--adapt-navigation-height);
+    }
+  }
+}

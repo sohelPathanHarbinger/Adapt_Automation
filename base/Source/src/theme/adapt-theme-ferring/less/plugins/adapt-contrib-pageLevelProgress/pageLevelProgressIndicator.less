@@ -1,0 +1,128 @@
+// Allows the progress lozenge to appear alongside the title
+// --------------------------------------------------
+.js-heading + .pagelevelprogress__indicator {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagelevelprogress__indicator-outer{
+  width: 5rem;
+}
+
+// Global progress lozenge
+// --------------------------------------------------
+.pagelevelprogress {
+  &__indicator {
+    border-color: @progress-border;
+    width: 5rem;
+    border-radius: 0;
+  }
+
+  &__indicator-inner {
+    background-color: @progress-inverted;
+    border-radius: 0;
+  }
+
+  &__indicator-bar {
+    background-color: @progress;
+    .transition(width @progress-duration linear);
+   
+  }
+}
+
+// Menu overrides
+// --------------------------------------------------
+.menu-item__progress {
+  .pagelevelprogress__indicator {
+    border-color: @menu-item-progress-border;
+  }
+
+  .pagelevelprogress__indicator-inner {
+    // background-color: @menu-item-progress-inverted;
+    background-color: transparent;
+  }
+
+  .pagelevelprogress__indicator-bar {
+    background-color: @redColor;
+  }
+}
+
+// Nav overrides
+// --------------------------------------------------
+.pagelevelprogress__nav-btn {
+  .pagelevelprogress__indicator {
+    border-color: @menu-item-progress;
+  }
+
+  .pagelevelprogress__indicator-inner {
+    background-color: @white;
+  }
+
+  .pagelevelprogress__indicator-bar {
+    background-color: @menu-item-progress;
+  }
+
+  // .no-touch &:hover {
+  //   .pagelevelprogress__indicator {
+  //     border-color: @nav-progress-border-hover;
+  //     .transition(border-color @duration ease-in);
+  //   }
+
+  //   .pagelevelprogress__indicator-inner {
+  //     background-color: @nav-progress-inverted-hover;
+  //     .transition(background-color @duration ease-in);
+  //   }
+
+  //   .pagelevelprogress__indicator-bar {
+  //     background-color: @nav-progress-hover;
+  //     .transition(background-color @duration ease-in);
+  //   }
+  // }
+}
+
+// Drawer overrides
+// --------------------------------------------------
+.pagelevelprogress__item-btn:not(.is-disabled) {
+  .pagelevelprogress__indicator {
+    border-color: @drawer-progress-border;
+  }
+
+  .pagelevelprogress__indicator-inner {
+    background-color: @drawer-progress-inverted;
+  }
+
+  .pagelevelprogress__indicator-bar {
+    background-color: @redColor;
+  }
+
+  .no-touch &:hover {
+    .pagelevelprogress__indicator {
+      border-color: @drawer-progress-border-hover;
+      .transition(border-color @duration ease-in);
+    }
+
+    .pagelevelprogress__indicator-inner {
+      background-color: @white;
+      .transition(background-color @duration ease-in);
+    }
+
+    .pagelevelprogress__indicator-bar {
+      background-color: @drawer-progress-hover;
+      .transition(background-color @duration ease-in);
+    }
+  }
+}
+
+.pagelevelprogress__item-btn.is-disabled {
+  .pagelevelprogress__indicator {
+    border-color: @disabled-inverted;
+  }
+
+  .pagelevelprogress__indicator-inner {
+    background-color: @disabled;
+  }
+
+  .pagelevelprogress__indicator-bar {
+    background-color: @disabled-inverted;
+  }
+}

@@ -1,0 +1,496 @@
+// --------------------------------------------------
+// Common
+// --------------------------------------------------
+
+// Background color mixin
+// Can be added to course, contentObject, article, block, or component to enable
+// e.g. 'bg-color black'
+// Note: both arguments must be predefined variables
+// --------------------------------------------------
+.bg-color-mixin(black, white);
+.bg-color-mixin(white, black);
+.bg-color-mixin(background, background-inverted);
+.bg-color-mixin(transparent-light, black);
+.bg-color-mixin(transparent-dark, white);
+
+.bg-color-mixin(@color, @color-inverted) {
+
+.bg-color.@{color} {
+  background-color: @@color;
+  color: @@color-inverted;
+
+  .block,
+  .component {
+    &__title,
+    &__body a,
+    &__instruction a {
+      color: @@color-inverted;
+    }
+  }
+
+  .pagelevelprogress {
+    &__indicator {
+      border-color: @@color-inverted;
+    }
+    &__indicator-inner {
+      background-color: @@color;
+    }
+    &__indicator-bar {
+      background-color: @@color-inverted;
+    }
+  }
+
+  .narrative {
+    &__progress {
+      background-color: fade(@@color-inverted, 50%);
+    }
+
+    &__progress.is-selected {
+      background-color: @@color-inverted;
+    }
+  }
+}
+
+}
+
+// styles associated with _textAlignment property
+// --------------------------------------------------
+.text-align-mixin(page);
+.text-align-mixin(article);
+.text-align-mixin(block);
+.text-align-mixin(component);
+
+.text-align-mixin(@selector) {
+
+.@{selector} {
+  &.title-align-left &__title,
+  &.body-align-left &__body,
+  &.instruction-align-left &__instruction {
+    text-align: left;
+
+    .dir-rtl & {
+      text-align: right;
+    }
+  }
+
+  &.title-align-center &__title,
+  &.body-align-center &__body,
+  &.instruction-align-center &__instruction {
+    text-align: center;
+  }
+
+  &.title-align-right &__title,
+  &.body-align-right &__body,
+  &.instruction-align-right &__instruction {
+    text-align: right;
+
+    .dir-rtl & {
+      text-align: left;
+    }
+  }
+}
+
+}
+
+// classes to hide content above / below medium breakpoint
+// --------------------------------------------------
+.hide-on-desktop {
+  @media (min-width: @device-width-medium) {
+    display: none;
+  }
+}
+
+.hide-on-mobile {
+  @media (max-width: @device-width-medium) {
+    display: none;
+  }
+}
+
+.hint__btn:has(.icon-hint-flash-back){
+  background: url('assets/GUI/Normal/fastforward_flashback.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-flash-back){
+  background: url('assets/GUI/Normal/fastforward_flashback.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-flash-back):hover{
+  background: url('assets/GUI/Hover/fastforward_flashback.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hint__btn:has(.icon-hint-quick-fact){
+  background: url('assets/GUI/Normal/quick_fact.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-quick-fact){
+  background: url('assets/GUI/Normal/quick_fact.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-quick-fact):hover{
+  background: url('assets/GUI/Hover/quick_fact.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hint__btn:has(.icon-hint-zoom-in){
+  background: url('assets/GUI/Normal/zoom_in.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-zoom-in){
+  background: url('assets/GUI/Normal/zoom_in.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-zoom-in):hover{
+  background: url('assets/GUI/Hover/zoom_in.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hint__btn:has(.icon-hit-the-ground){
+  background: url('assets/GUI/Normal/hit_the_ground.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hit-the-ground){
+  background: url('assets/GUI/Normal/hit_the_ground.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hit-the-ground):hover{
+  background: url('assets/GUI/Hover/hit_the_ground.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hint__btn:has(.icon-hint-fast-forward){
+  background: url('assets/GUI/Normal/fast_forward.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-fast-forward){
+  background: url('assets/GUI/Normal/fast_forward.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-touch .hint__btn:not(.is-disabled):not(.is-locked):has(.icon-hint-fast-forward):hover{
+  background: url('assets/GUI/Hover/fast_forward.png');
+  width: 40px;
+  // height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.vertical-table-data-highlight tr:nth-child(odd) td {
+        background-color: @semiWhite;
+    }
+
+.vertical-table-data-highlight tr:nth-child(even) td {
+        background-color: white;
+    }
+
+    .vertical-table-data-highlight tr td:first-child {
+        text-align: center;
+    }
+        
+    .vertical-table-data-highlight tr th {
+        text-align: left;
+    }
+    
+    .vertical-table-data-highlight tr th:first-child {
+        text-align: center;
+    }
+
+
+    .audio-prompt-content{
+      .notify-popup-body{
+      background: white;
+      padding: 2rem;
+      }
+      
+      
+      .notify-popup-buttons{
+      background: white;
+      padding: 0 2rem 2rem 2rem;
+      margin-bottom: 1rem;
+      }
+
+      .notify__btn{
+        background: @fourth;
+        color: @menu-item-btn-color-inverted;
+      }
+
+      .notify-popup-title{
+        padding: 0 2rem 1rem 2rem;
+        .notify-popup-title-inner{
+          color:@font-color-inverted;
+          .notify-title;
+          width: fit-content;
+        }
+      }
+    }
+
+    
+  .article__container{
+        padding-bottom: 1px;
+  }
+
+
+  .accordion-item__content{
+    background: @semiWhite;
+    &:has(.audio-controls){
+      .accordion-item__content-inner{
+        padding-right: 80px;
+      }
+    }
+  }
+
+  .component__inner{
+    &:has(.audio-controls){
+      .component__header{
+        padding-right: 80px;
+      }
+    }
+  }
+
+
+  .audio-controls{
+    &:has([style="display: none;"]){
+      display: none;
+    }
+  }
+
+  .video-heading-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  .hotgraphic-vertical .hotgraphic__inner{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .image-padding-removed .notify__image-container .notify__image{
+    padding: 0;
+  }
+
+
+  button:has(.graphic-expand-icon){
+  background: url('assets/GUI/Normal/expand_icon.png');
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+      background-size: cover !important;
+}
+
+.no-touch button:not(.is-disabled):not(.is-locked):has(.graphic-expand-icon){
+  background: url('assets/GUI/Normal/expand_icon.png');
+}
+
+.no-touch button:not(.is-disabled):not(.is-locked):has(.graphic-expand-icon):hover{
+  background: url('assets/GUI/Hover/expand_icon.png');
+}
+
+.graphicexpand-popup{
+  overflow-y: auto !important;
+  // z-index: 100;
+  & .notify__popup-inner{
+        max-height: 70vh;
+  }
+
+  &:has([src="assets/images/phases_of_the_reproductive_cycle.png"]), &:has([src="assets/images/basic_steps_of_the_ivf_process.png"]), &:has([src="assets/images/the_natural_reproductive_process.png"]){
+    overflow-y: unset !important;
+    & .notify__popup-inner{
+          max-height: fit-content;
+    }
+  }
+}
+
+.is-submitted .mcq-item__icon{
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.is-submitted .mcq-item__correct-icon .icon::before{
+  color: #065f28;
+}
+
+.is-submitted .mcq-item__incorrect-icon .icon::before{
+  color: #ff0000;
+}
+
+.matching-item__answer-container{
+  display: none;
+}
+
+.matching__widget.show-user-answer .matching-item__answer-container{
+  display: block;
+}
+
+.matching__widget.show-user-answer{
+  &.is-correct{
+    .matching-item{
+      flex-wrap: wrap;
+      &.is-correct{
+        .matching-item__answer-container{
+          display: none;
+        }
+      }
+    }
+  }
+  .matching-item{
+    flex-wrap: wrap;
+  }
+  .matching-item__title{
+    width: 100%;
+    max-width: 25rem;
+  }
+  .matching-item__answer-container{
+    width: 100%;
+    max-width: 25rem;
+    margin-left: auto;
+    margin-top: 6px;
+  }
+}
+
+.is-submitted .matching-item__select-icon{
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.is-submitted .matching-item__select-correct-icon .icon::before{
+  color: #065f28;
+}
+
+.is-submitted .matching-item__select-incorrect-icon .icon::before{
+  color: #ff0000;
+}
+
+
+// .matching__widget .is-correct button.dropdown__btn.js-dropdown-btn.is-disabled.is-selected{
+//   background: @primary !important;
+//   border:solid 0.1rem @primary !important;
+// }
+
+// .matching__widget .is-incorrect button.dropdown__btn.js-dropdown-btn.is-disabled.is-selected{
+//   background: @disabled !important;
+//   border:solid 0.1rem @disabled !important;
+// }
+
+.notify__section-inner:has(.content-full){
+  flex-direction: column !important;
+      height: 60vh;
+    overflow-y: auto;
+  .notify__body{
+    width: 100% !important;
+    padding-bottom: 0;
+  }
+  .notify__image-container{
+    width: 100% !important;
+        padding-left: 1.2rem;
+            padding-top: 0;
+  }
+}
+
+
+
+@media only screen and (min-width: 960px){
+.notify__body-inner:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]) img{
+  min-width: 1200px !important;
+  max-width: 1200px !important;
+}
+
+.notify__body-inner:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+  width: max-content;
+}
+
+.notify__body:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+  width: max-content;
+}
+
+.notify__section-inner:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+  width: max-content;
+}
+
+.notify__section:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+  width: max-content;
+}
+
+.notify__content-inner:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+  width: max-content;
+}
+
+.notify__content:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+  width: max-content;
+}
+
+.notify__popup-inner:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+  // width: max-content;
+  // max-width: max-content;
+      overflow: auto !important;
+}
+
+.notify__popup:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]){
+      overflow: none !important;
+}
+
+.notify__popup:has([src="assets/images/the_2-Cell,_2-Gonadotropin_theory.png"]) .btn-icon{
+      position: fixed !important;
+          right: 20px;
+}
+}
+
+.hide-reset-btn button[aria-label="Reset"]{
+  display: none;
+}
+
+.hide-reset-btn:has([aria-label="Reset"]) button[aria-label="Show feedback"]{
+  margin-left: 0;
+}

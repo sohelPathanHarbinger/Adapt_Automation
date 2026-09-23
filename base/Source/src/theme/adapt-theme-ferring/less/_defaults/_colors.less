@@ -1,0 +1,223 @@
+// Colour definitions
+// --------------------------------------------------
+@blue: #117F93;
+@blueDark: #20223E;
+@grey: #E7E6E6;
+@greyDark: #4D4D4D;
+@greyLight: #f9f9f9;
+@primary: #521a6f;
+@primaryblack: #1E1E1E;
+@primary_alpha:#963CBD;
+@primary_gradient:linear-gradient(90deg,#4b006e 0%,#7b2cbf 50%,#c8a2c8 100%);
+@primary_gradient_hover: linear-gradient(90deg,#e6005c 0%,#ff4d88 50%,#e6b3c2 100%);
+@secondary:#521a6f;
+@third:linear-gradient(0deg, #047638 24.5%, #02190C 122.5%);
+@fourth:#C6A1CF;
+@fifth:#C4C4C4;
+@sixth: #fef4f7;
+@seventh: #FF6B00;
+@eighth: #6D6E71;
+@blockTitleColor: #12D2FF;
+@redColor: #E10F5E;
+@semiWhite: #fef4f7;
+
+@primary_gradient1:linear-gradient(180deg,#b784d7 0%,#7b2cbf 45%,#5a189a 100%);
+@primary_gradient_hover1:linear-gradient(180deg,#ffb3c7 0%,#ff4d88 45%,#d9045c 100%);
+
+
+// These variables are used to change the colour of text
+// Primary use is for altering the text colour over a background image
+// See ../project/theme-extras.less for block mixin
+// --------------------------------------------------
+@transparent-light: transparent;
+@transparent-dark: transparent;
+
+// Note: If customising a theme for the Authoring Tool please update the
+// corresponding default value for that variable in the properties.schema file.
+// This is to stop any amended variables below being overwritten by
+// the Theme Picker in the Authoring Tool.
+
+// Body, link, and heading colour
+// --------------------------------------------------
+@body-background-color: @white;
+
+@font-color: black;
+@font-color-inverted: @white;
+
+@link: @font-color;
+@link-inverted: @font-color-inverted;
+
+@link-hover: @link;
+@link-inverted-hover: @link-inverted;
+
+@heading-color: @secondary;
+@heading-color-inverted: @white;
+
+@heading-2-color:@secondary;
+
+// Items - components
+// --------------------------------------------------
+@item-color: @primary_gradient;
+@item-color-inverted: @white;
+
+@item-color-hover: @primary_gradient_hover;
+@item-color-inverted-hover: white;
+
+@item-color-selected: @primary_gradient_hover;
+@item-color-inverted-selected: white;
+
+// Visited - presentation components
+// --------------------------------------------------
+@visited: @grey;
+@visited-inverted: white;
+
+// Buttons
+// --------------------------------------------------
+@btn-color: @secondary;
+@btn-color-inverted: white;
+
+@btn-color-hover: @primary;
+@btn-color-inverted-hover: white;
+
+// Button icon
+// --------------------------------------------------
+@btn-icon-color: white;
+@btn-icon-color-inverted:@secondary;
+
+@btn-icon-color-hover: @secondary;
+@btn-icon-color-inverted-hover:white;
+
+// Disabled - question components
+// --------------------------------------------------
+@disabled: @fourth;
+@disabled-inverted:white;
+
+// Validation states - question marking
+// --------------------------------------------------
+@validation-success: #065f28;
+@validation-success-inverted: @white;
+
+@validation-error: #ff0000;
+@validation-error-inverted: @white;
+
+// Progress
+// --------------------------------------------------
+
+@progress: @redColor;
+@progress-inverted: @white;
+@progress-border: @redColor;
+
+// Menu
+// --------------------------------------------------
+@menu-header-background-color: @primary;
+@menu-header-title-color: @heading-color;
+@menu-header-body-color: @font-color;
+@menu-header-instruction-color: @font-color;
+
+@menu-item: @white;
+@menu-item-inverted: @primary;
+@menu-item-border-color: @primary;
+
+@menu-item-progress: @progress;
+@menu-item-progress-inverted: @progress-inverted;
+@menu-item-progress-border: @progress-border;
+
+@menu-item-btn-color: @redColor;
+@menu-item-btn-color-inverted: @white;
+
+@menu-item-btn-color-hover: @secondary;
+@menu-item-btn-color-inverted-hover: @white;
+
+// Navigation
+// --------------------------------------------------
+@nav: @white;
+@nav-inverted: @redColor;
+
+@nav-icon: @nav-inverted;
+@nav-icon-inverted: @nav;
+
+@nav-icon-hover: @secondary;
+@nav-icon-inverted-hover: @nav-icon-inverted;
+
+@nav-progress: @nav-icon;
+@nav-progress-inverted: @nav-icon-inverted;
+@nav-progress-border: @nav-icon-inverted;
+
+@nav-progress-hover: @secondary;
+@nav-progress-inverted-hover: @primary;
+@nav-progress-border-hover: @primary;
+
+// Notify
+// --------------------------------------------------
+@notify: @primary;
+@notify-inverted: @white;
+
+@notify-link: @notify-inverted;
+
+@notify-link-hover: @notify-link;
+
+@notify-btn: @btn-color-inverted;
+@notify-btn-inverted: @btn-color;
+
+@notify-btn-hover: @secondary;
+@notify-btn-inverted-hover: @notify-btn-inverted;
+
+@notify-icon: @primary;
+@notify-icon-inverted: @notify-inverted;
+
+@notify-icon-hover: @fourth;
+@notify-icon-inverted-hover: @notify-icon-inverted;
+
+// Drawer
+// --------------------------------------------------
+@drawer: @secondary;
+@drawer-inverted: @white;
+
+@drawer-link: @drawer-inverted;
+
+@drawer-link-hover: @drawer-link;
+
+@drawer-icon: @drawer;
+@drawer-icon-inverted: @drawer-inverted;
+
+@drawer-icon-hover: darken(@drawer-icon, 10%);
+@drawer-icon-inverted-hover: @drawer-icon-inverted;
+
+@drawer-item: @drawer;
+@drawer-item-inverted: @drawer-inverted;
+
+@drawer-item-hover: darken(@drawer-item, 10%);
+@drawer-item-inverted-hover: @drawer-item-inverted;
+
+@drawer-item-selected: darken(@drawer-item, 20%);
+@drawer-item-inverted-selected: @drawer-item-inverted;
+@drawer-item-selected-underline: @drawer-item-inverted;
+
+@drawer-progress: @drawer-item-inverted;
+@drawer-progress-inverted: @drawer-item;
+@drawer-progress-border: @drawer-item-inverted;
+
+@drawer-progress-hover: @drawer-item-inverted-hover;
+@drawer-progress-inverted-hover: @drawer-item-hover;
+@drawer-progress-border-hover: @drawer-progress-border;
+
+// Pull quote
+// --------------------------------------------------
+@pull-quote: @greyLight;
+@pull-quote-inverted: @font-color;
+@pull-quote-border: @blue;
+
+// Background
+// --------------------------------------------------
+@background: @black;
+@background-inverted: @white;
+
+// Shadow
+// --------------------------------------------------
+@shadow: @primaryblack;
+@shadow-inverted: @white;
+@shadow-opacity: 70%;
+
+//Opacity
+//----------------------------------------------------
+@general-opacity:85%;

@@ -1,0 +1,62 @@
+@foreground-color: #333333;
+@foreground-color-inverted: #333333;  
+@background-color-inverted: #f1d6d6; 
+@table-header-color: #333333; 
+
+.table-inner {
+    @table-border-color: @foreground-color;
+    @table-header-background-color: @background-color-inverted;
+    @table-header-color: @foreground-color-inverted;
+
+    .table-wrapper {
+        overflow: hidden;
+    }
+
+    .table-widget {
+        overflow-x: auto;
+
+        table, th, td {
+            border: 1px solid @table-border-color;
+            table-layout: fixed;
+        }
+
+        table {
+            width: 100%;
+            height: auto;
+            border: 1px solid @table-border-color;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            tr {
+                th {
+                    border: 1px solid @table-border-color;
+                    text-align: center;
+                    vertical-align: middle;
+                    background-color: @table-header-background-color;
+                    color: @table-header-color;
+                    padding: @item-padding / 2;
+                }
+
+                td {
+                    border: 1px solid @table-border-color;
+                    text-align: center; /* Default text-align for all columns */
+                    vertical-align: middle;
+                    padding: @item-padding / 2;
+
+                    &:first-child {
+                        text-align: left; /* Override for the first column */
+                    }
+                }
+
+                img {
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+            }
+        }
+    }
+}

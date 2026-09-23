@@ -1,0 +1,100 @@
+.boxmenu {
+  position: relative;
+  max-width: inherit;
+  .l-container-padding(@menu-padding-ver, @menu-padding-hoz);
+
+  &.has-bg-image>.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__header {
+    position: relative;
+    background: @primary;
+   
+  }
+
+  &__header.has-bg-image>.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__header-inner {
+    position: relative;
+    .l-container-padding(@menu-header-padding-ver, @menu-header-padding-hoz);
+    
+   
+  }
+
+  &__title {
+    margin-bottom: @menu-title-margin;
+   
+    color: white;
+    font-size: 1.1rem;
+    
+    width: 45rem;
+
+    @media(max-width: @device-width-large) {
+      font-size: 1.3rem;
+      width: 20rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: @menu-subtitle-margin;
+    font-size: 2.25rem;
+    font-weight: 700;
+    width: 45rem;
+
+    @media(max-width: @device-width-large) {
+      font-size: 1.3rem;
+      width: 20rem;
+    }
+
+    .menu-subtitle;
+  }
+
+  &__body {
+    margin-bottom: @menu-body-margin;
+    .menu-body;
+    color: @menu-header-body-color;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: @secondary;
+    line-height: 2rem;
+  }
+
+  &__instruction {
+    margin-bottom: @menu-instruction-margin;
+    .menu-instruction;
+    color: @menu-header-instruction-color;
+    font-size:.9rem;
+    font-style:italic;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+
+  &__item-container {
+    margin-top: @menu-item-container-margin;
+    flex-direction: column;
+  }
+}

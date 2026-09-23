@@ -1,0 +1,25 @@
+// Fix for Firefox outline container height misalignment
+// https://github.com/adaptlearning/adapt_framework/issues/2912
+// --------------------------------------------------
+.menu,
+.menu-item,
+.page,
+.article,
+.block,
+.component {
+  &__title-inner {
+    display: inline;
+    vertical-align: middle;
+  }
+}
+
+.menu{
+  &__title-inner{
+    .js-heading-inner{
+          width: fit-content;
+    padding: 6px 10px;
+    color: @white;
+    background: @primary;
+    }
+  }
+}

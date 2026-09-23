@@ -1,0 +1,90 @@
+.dropdown {
+  &__btn {
+    position: relative;
+    padding: @item-padding (@icon-size + (@item-padding * 2)) @item-padding @item-padding;
+    line-height: @body-line-height;
+    text-align: left;
+    background: @fourth;
+    color: @font-color;
+    font-weight: bold;
+    border-radius: calc(@btn-border-radius * 2);
+
+    .no-touch &:not(.is-disabled):not([aria-expanded="true"]):hover,
+    html:not(.a11y-disable-focusoutline) &:focus-visible {
+      background: @item-color-hover;
+      color: @btn-color-inverted;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+
+    .dir-rtl & {
+      padding-right: @item-padding;
+      padding-left: @icon-size + (@item-padding * 2);
+      text-align: right;
+    }
+
+  }
+
+  &__btn.is-selected{
+    background: @item-color-selected;
+    color: @item-color-inverted-selected;
+  }
+
+  &__btn.is-disabled {
+    background: @disabled;
+    color: @disabled-inverted;
+  }
+
+  &__btn[aria-expanded="true"] {
+    background: @item-color-selected;
+    color: @item-color-inverted-selected;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: @item-padding;
+    .transform(translateY(-50%));
+
+    .dir-rtl & {
+      right: inherit;
+      left: @item-padding;
+    }
+  }
+}
+
+.dropdown-item {
+  padding: @item-padding;
+  background: white;
+  border-bottom: 0.1rem solid @black;
+  border-left: 0.1rem solid @black;
+  border-right: 0.1rem solid @black;
+  color: @font-color;
+
+  .no-touch &:not(:focus-visible):not([aria-selected="true"]):hover {
+    background: @item-color-hover;
+    color: white;
+    border-bottom: 0.1rem solid @black;
+    border-left: 0.1rem solid @black;
+    border-right: 0.1rem solid @black;
+    // .transition(background-color @duration ease-in, color @duration ease-in;);
+  }
+
+  &:focus-visible,
+  &[aria-selected="true"] {
+    // This code can be used to style a non-native dropdown as closely
+    // as possible to the default browser settings
+    // background-color: Highlight;
+    // background-color: -webkit-focus-ring-color;
+    // color: white;
+
+    background: @item-color-hover;
+    color: white;
+    border:solid 0.1rem @black;
+    border-top: none;
+  }
+}
+button.dropdown__btn.js-dropdown-btn.is-disabled.is-selected{
+  background: @primary;
+  color: @btn-color-inverted;
+  border:solid 0.1rem @primary;
+}

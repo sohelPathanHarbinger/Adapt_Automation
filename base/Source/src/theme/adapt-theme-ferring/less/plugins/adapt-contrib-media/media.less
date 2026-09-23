@@ -1,0 +1,37 @@
+.media {
+  &__transcript-container {
+    margin-top: @item-margin;
+  }
+
+  &__transcript-btn {
+    padding: @item-padding;
+    background-color: @item-color;
+    color: @item-color-inverted;
+    border-radius: @item-border-radius;
+
+    .no-touch &:not([aria-expanded="true"]):hover {
+      background-color: @item-color-hover;
+      color: @item-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &.is-complete &__transcript-btn {
+    background-color: @visited;
+    color: @visited-inverted;
+  }
+
+  &__transcript-btn[aria-expanded="true"] {
+    background-color: @item-color-selected;
+    color: @item-color-inverted-selected;
+  }
+
+  &__transcript-body-inline {
+    margin-top: @item-margin;
+    padding: @item-padding;
+  }
+
+  &__transcript-body-inline a {
+    .link-text;
+  }
+}

@@ -1,0 +1,139 @@
+html {
+  // Prevents pagenav tooltip from triggering a horizontal scroll bar
+  // Only affects IE11 but applied globally to weed out bugs
+  // --------------------------------------------------
+  overflow-x: hidden;
+}
+
+.pagenav {
+  &__widget {
+    position: relative;
+  }
+
+  &__btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__btn-inner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// --------------------------------------------------
+// THEME
+// --------------------------------------------------
+.pagenav {
+  &__btn {
+    margin: @item-margin;
+    border: @primary;
+
+    // &[aria-current="page"] {
+    //   background: darken(@btn-color, 20%);
+    // }
+  }
+
+  &__btn-icon .icon {
+    display: block;
+  }
+
+  // buttons with text and icon (left aligned icon as default)
+  // --------------------------------------------------
+  &__btn.btn-icon:not(.icon-is-right).btn-text .icon {
+    padding-right: (@icon-padding / 2);
+
+    .dir-rtl & {
+      padding-left: (@icon-padding / 2);
+      padding-right: inherit;
+    }
+  }
+
+  // buttons with text and icon (right aligned icon)
+  // --------------------------------------------------
+  &__btn.btn-icon.icon-is-right.btn-text .icon {
+    padding-left: (@icon-padding / 2);
+
+    .dir-rtl & {
+      padding-right: (@icon-padding / 2);
+      padding-left: inherit;
+    }
+  }
+
+  // consistent with nav icon button styling
+  // --------------------------------------------------
+  &__btn.btn-icon:not(.btn-text) {
+    padding: @icon-padding;
+    background: @btn-color;
+    color: @btn-color-inverted;
+    border-radius: @btn-border-radius;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: @btn-color-hover;
+      color: @btn-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in; );
+    }
+
+    &.is-locked,
+    &.is-disabled {
+      background: @disabled;
+      color: @disabled-inverted;
+    }
+  }
+
+  &__btn.btn-icon:not(.btn-text)[data-type="_previous"] {
+    background: url("assets/GUI/Bottom-Nav/Normal/back-button.png") no-repeat center !important;
+    background-size: cover !important;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: url("assets/GUI/Bottom-Nav/Hover/back-button.png") no-repeat center !important;
+      background-size: cover !important;
+    }
+
+    &.is-locked,
+    &.is-disabled {
+      background: url("assets/GUI/Bottom-Nav/Visited/back-button.png") no-repeat center !important;
+      background-size: cover !important;
+    }
+  }
+  &__btn.btn-icon:not(.btn-text)[data-type="_root"] {
+    background: url("assets/GUI/Bottom-Nav/Normal/home-button.png") no-repeat center !important;
+    background-size: cover !important;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: url("assets/GUI/Bottom-Nav/Hover/home-button.png") no-repeat center !important;
+      background-size: cover !important;
+    }
+
+    &.is-locked,
+    &.is-disabled {
+      background: url("assets/GUI/Bottom-Nav/Visited/home-button.png") no-repeat center !important;
+      background-size: cover !important;
+    }
+  }
+  &__btn.btn-icon:not(.btn-text)[data-type="_next"] {
+    background: url("assets/GUI/Bottom-Nav/Normal/next-button.png") no-repeat center !important;
+    background-size: cover !important;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: url("assets/GUI/Bottom-Nav/Hover/next-button.png") no-repeat center !important;
+      background-size: cover !important;
+    }
+
+    &.is-locked,
+    &.is-disabled {
+      background: url("assets/GUI/Bottom-Nav/Visited/next-button.png") no-repeat center !important;
+      background-size: cover !important;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    border: 1px solid @fifth;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

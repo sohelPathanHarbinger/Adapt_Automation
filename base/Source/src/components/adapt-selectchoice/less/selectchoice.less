@@ -1,0 +1,103 @@
+.selectchoice {
+
+  &__body-inner{
+    font-weight: bold;
+  }
+    &__widget {
+      display: flex;
+      flex-direction: column;
+    }  
+    &__item-head  {
+      display: none;
+      font-weight: 700;
+    }
+    &__item{
+      padding: 1rem;
+      margin-bottom: 0.25rem;
+      background-color: @fourth;
+      border-radius: 0.32rem;
+      &.is-selected{
+        label{
+        cursor: auto;
+      }
+      }
+    }
+    &__item-text{
+      padding: .5rem .5rem .5rem .5rem;
+      font-weight: 700;
+    }
+    &__item-choices {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      min-width: 12rem;   
+    }
+   
+    &__item-choice {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 .25rem;
+      label{
+        cursor: pointer;
+        &:has(.is-selected){
+          cursor: auto;
+        }
+      }
+    }
+    &__item-choices input {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      z-index: -1;
+      .transform(translate(-50%, -50%));
+    }
+    &__item-choice-text{
+      text-align: center;
+    }
+    &__item-state{
+      position: absolute;
+      display: none;
+    }
+    &__item-icon .icon {
+      .icon-radio-unchecked;
+    }
+    &__item-icon.is-selected .icon {
+      .icon-radio-checked;
+    }
+    &__item-correct-icon .icon {
+      .icon-tick;
+    }
+  
+    &__item-incorrect-icon .icon {
+      .icon-cross;
+    }
+    &__widget.show-user-answer &__item-state {
+      display: none;
+    }
+    @media all and (min-width: (@device-width-medium + 1px)) {
+      &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__item:not(.selectchoice__item-head){
+        .selectchoice__item-choice-text{
+          display: none;
+        }
+      }
+    }
+  }
+.is-multiple-select{
+.selectchoice__item-icon .icon {
+    .icon-checkbox-unchecked;
+  }
+  .selectchoice__item-icon.is-selected .icon {
+    .icon-checkbox-checked;
+  }
+}
+  

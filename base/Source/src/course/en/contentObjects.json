@@ -1,0 +1,464 @@
+[
+  {
+    "_id": "co-01-how-to-use",
+    "_parentId": "course",
+    "_type": "page",
+    "_classes": "",
+    "_htmlClasses": "",
+    "title": "How to Use This Module",
+    "displayTitle": "How to Use This Module",
+    "body": "",
+    "pageBody": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "",
+      "alt": ""
+    },
+    "linkText": "View",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_showPageCompletion": false,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": true
+    },
+    "_vanilla": {
+      "_backgroundImage": {
+        "_xlarge": "assets/GUI/background.png",
+        "_large": "assets/GUI/background.png",
+        "_medium": "assets/GUI/background.png",
+        "_small": "assets/GUI/background.png"
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "cover",
+        "_backgroundRepeat": "no-repeat",
+        "_backgroundPosition": "fixed"
+      },
+      "_responsiveClasses": {
+        "_xlarge": "",
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_pageHeader": {
+        "_textAlignment": {
+          "_title": "",
+          "_body": "",
+          "_instruction": ""
+        },
+        "_backgroundImage": {
+          "_xlarge": "",
+          "_large": "",
+          "_medium": "",
+          "_small": ""
+        },
+        "_backgroundStyles": {
+          "_backgroundSize": "",
+          "_backgroundRepeat": "",
+          "_backgroundPosition": ""
+        },
+        "_minimumHeights": {
+          "_xlarge": 0,
+          "_large": 0,
+          "_medium": 0,
+          "_small": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "co-02-introduction",
+    "_parentId": "course",
+    "_type": "page",
+    "_classes": "",
+    "_htmlClasses": "",
+    "title": "Introduction",
+    "displayTitle": "Introduction",
+    "body": "",
+    "pageBody": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "",
+      "alt": ""
+    },
+    "linkText": "View",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_showPageCompletion": false,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": true
+    },
+    "_vanilla": {
+      "_backgroundImage": {
+        "_xlarge": "assets/GUI/background.png",
+        "_large": "assets/GUI/background.png",
+        "_medium": "assets/GUI/background.png",
+        "_small": "assets/GUI/background.png"
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "cover",
+        "_backgroundRepeat": "no-repeat",
+        "_backgroundPosition": "fixed"
+      },
+      "_responsiveClasses": {
+        "_xlarge": "",
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_pageHeader": {
+        "_textAlignment": {
+          "_title": "",
+          "_body": "",
+          "_instruction": ""
+        },
+        "_backgroundImage": {
+          "_xlarge": "",
+          "_large": "",
+          "_medium": "",
+          "_small": ""
+        },
+        "_backgroundStyles": {
+          "_backgroundSize": "",
+          "_backgroundRepeat": "",
+          "_backgroundPosition": ""
+        },
+        "_minimumHeights": {
+          "_xlarge": 0,
+          "_large": 0,
+          "_medium": 0,
+          "_small": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "co-03-ch1",
+    "_parentId": "course",
+    "_type": "page",
+    "_classes": "",
+    "_htmlClasses": "",
+    "title": "Chapter 1",
+    "displayTitle": "Chapter 1: Content Components",
+    "body": "",
+    "pageBody": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "",
+      "alt": ""
+    },
+    "linkText": "View",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": false,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": true
+    },
+    "_vanilla": {
+      "_backgroundImage": {
+        "_xlarge": "assets/GUI/background.png",
+        "_large": "assets/GUI/background.png",
+        "_medium": "assets/GUI/background.png",
+        "_small": "assets/GUI/background.png"
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "cover",
+        "_backgroundRepeat": "no-repeat",
+        "_backgroundPosition": "fixed"
+      },
+      "_responsiveClasses": {
+        "_xlarge": "",
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_pageHeader": {
+        "_textAlignment": {
+          "_title": "",
+          "_body": "",
+          "_instruction": ""
+        },
+        "_backgroundImage": {
+          "_xlarge": "",
+          "_large": "",
+          "_medium": "",
+          "_small": ""
+        },
+        "_backgroundStyles": {
+          "_backgroundSize": "",
+          "_backgroundRepeat": "",
+          "_backgroundPosition": ""
+        },
+        "_minimumHeights": {
+          "_xlarge": 0,
+          "_large": 0,
+          "_medium": 0,
+          "_small": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "co-04-ch2",
+    "_parentId": "course",
+    "_type": "page",
+    "_classes": "",
+    "_htmlClasses": "",
+    "title": "Chapter 2",
+    "displayTitle": "Chapter 2: Interactivities",
+    "body": "",
+    "pageBody": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "",
+      "alt": ""
+    },
+    "linkText": "View",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": false,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": true
+    },
+    "_vanilla": {
+      "_backgroundImage": {
+        "_xlarge": "assets/GUI/background.png",
+        "_large": "assets/GUI/background.png",
+        "_medium": "assets/GUI/background.png",
+        "_small": "assets/GUI/background.png"
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "cover",
+        "_backgroundRepeat": "no-repeat",
+        "_backgroundPosition": "fixed"
+      },
+      "_responsiveClasses": {
+        "_xlarge": "",
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_pageHeader": {
+        "_textAlignment": {
+          "_title": "",
+          "_body": "",
+          "_instruction": ""
+        },
+        "_backgroundImage": {
+          "_xlarge": "",
+          "_large": "",
+          "_medium": "",
+          "_small": ""
+        },
+        "_backgroundStyles": {
+          "_backgroundSize": "",
+          "_backgroundRepeat": "",
+          "_backgroundPosition": ""
+        },
+        "_minimumHeights": {
+          "_xlarge": 0,
+          "_large": 0,
+          "_medium": 0,
+          "_small": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "co-05-glossary",
+    "_parentId": "course",
+    "_type": "page",
+    "_classes": "",
+    "_htmlClasses": "",
+    "title": "Glossary",
+    "displayTitle": "Glossary",
+    "body": "",
+    "pageBody": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "",
+      "alt": ""
+    },
+    "linkText": "View",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_showPageCompletion": false,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": true
+    },
+    "_vanilla": {
+      "_backgroundImage": {
+        "_xlarge": "assets/GUI/background.png",
+        "_large": "assets/GUI/background.png",
+        "_medium": "assets/GUI/background.png",
+        "_small": "assets/GUI/background.png"
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "cover",
+        "_backgroundRepeat": "no-repeat",
+        "_backgroundPosition": "fixed"
+      },
+      "_responsiveClasses": {
+        "_xlarge": "",
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_pageHeader": {
+        "_textAlignment": {
+          "_title": "",
+          "_body": "",
+          "_instruction": ""
+        },
+        "_backgroundImage": {
+          "_xlarge": "",
+          "_large": "",
+          "_medium": "",
+          "_small": ""
+        },
+        "_backgroundStyles": {
+          "_backgroundSize": "",
+          "_backgroundRepeat": "",
+          "_backgroundPosition": ""
+        },
+        "_minimumHeights": {
+          "_xlarge": 0,
+          "_large": 0,
+          "_medium": 0,
+          "_small": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "co-06-references",
+    "_parentId": "course",
+    "_type": "page",
+    "_classes": "",
+    "_htmlClasses": "",
+    "title": "References",
+    "displayTitle": "References",
+    "body": "",
+    "pageBody": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "",
+      "alt": ""
+    },
+    "linkText": "View",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_showPageCompletion": false,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": true
+    },
+    "_vanilla": {
+      "_backgroundImage": {
+        "_xlarge": "assets/GUI/background.png",
+        "_large": "assets/GUI/background.png",
+        "_medium": "assets/GUI/background.png",
+        "_small": "assets/GUI/background.png"
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "cover",
+        "_backgroundRepeat": "no-repeat",
+        "_backgroundPosition": "fixed"
+      },
+      "_responsiveClasses": {
+        "_xlarge": "",
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_pageHeader": {
+        "_textAlignment": {
+          "_title": "",
+          "_body": "",
+          "_instruction": ""
+        },
+        "_backgroundImage": {
+          "_xlarge": "",
+          "_large": "",
+          "_medium": "",
+          "_small": ""
+        },
+        "_backgroundStyles": {
+          "_backgroundSize": "",
+          "_backgroundRepeat": "",
+          "_backgroundPosition": ""
+        },
+        "_minimumHeights": {
+          "_xlarge": 0,
+          "_large": 0,
+          "_medium": 0,
+          "_small": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "co-07-congratulations",
+    "_parentId": "course",
+    "_type": "page",
+    "_classes": "",
+    "_htmlClasses": "",
+    "title": "Congratulations",
+    "displayTitle": "Congratulations",
+    "body": "",
+    "pageBody": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "",
+      "alt": ""
+    },
+    "linkText": "View",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_showPageCompletion": false,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": true
+    },
+    "_vanilla": {
+      "_backgroundImage": {
+        "_xlarge": "assets/GUI/background.png",
+        "_large": "assets/GUI/background.png",
+        "_medium": "assets/GUI/background.png",
+        "_small": "assets/GUI/background.png"
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "cover",
+        "_backgroundRepeat": "no-repeat",
+        "_backgroundPosition": "fixed"
+      },
+      "_responsiveClasses": {
+        "_xlarge": "",
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_pageHeader": {
+        "_textAlignment": {
+          "_title": "",
+          "_body": "",
+          "_instruction": ""
+        },
+        "_backgroundImage": {
+          "_xlarge": "",
+          "_large": "",
+          "_medium": "",
+          "_small": ""
+        },
+        "_backgroundStyles": {
+          "_backgroundSize": "",
+          "_backgroundRepeat": "",
+          "_backgroundPosition": ""
+        },
+        "_minimumHeights": {
+          "_xlarge": 0,
+          "_large": 0,
+          "_medium": 0,
+          "_small": 0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,195 @@
+    // Regular hotgraphic
+    // --------------------------------------------------
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Hot graphic",
+        "displayTitle": "Hot graphic",
+        "body": "This is optional body text.",
+        "instruction": "Select the icons to find out more.",
+        "mobileBody": "This is optional body text that will be shown when viewed on mobile.",
+        "mobileInstruction": "Select the plus icon followed by the next arrow to find out more.",
+        "_comment": "setCompletionOn = inview | allItems",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_isNarrativeOnMobile": true,
+        "_useNumberedPins": false,
+        "_useGraphicsAsPins": false,
+        "_isRound": false,
+        "_graphic": {
+            "src": "course/en/images/example.jpg",
+            "alt": "",
+            "attribution": "Copyright © 2019"
+        },
+        "_items": [
+            {
+                "_top": 25,
+                "_left": 25,
+                "title": "Hotspot 1 title",
+                "body": "This is display text 1.",
+                "strapline": "Hotspot 1 strapline",
+                "_imageAlignment": "right",
+                "_comment": "Supported classes = 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+                "_classes": "",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "Copyright © 2019",
+                    "_classes": ""
+                },
+                "_tooltip": {
+                    "_isEnabled": false,
+                    "text": "{{ariaLabel}}"
+                }
+            },
+            {
+                "_top": 50,
+                "_left": 50,
+                "title": "Hotspot 2 title",
+                "body": "This is display text 2 with a left aligned image.",
+                "strapline": "Hotspot 2 strapline",
+                "_imageAlignment": "left",
+                "_classes": "",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "_tooltip": {
+                    "_isEnabled": false,
+                    "text": "{{ariaLabel}}"
+                }
+            },
+            {
+                "_top": 75,
+                "_left": 75,
+                "title": "Hotspot 3 title",
+                "body": "This is display text 3.",
+                "strapline": "Hotspot 3 strapline",
+                "_imageAlignment": "right",
+                "_classes": "",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "_tooltip": {
+                    "_isEnabled": false,
+                    "text": "{{ariaLabel}}"
+                }
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }
+
+    // Example using graphics as pins
+    // The following example lays out the item graphics (_items._graphic)
+    // in a 2x2 grid.
+    // --------------------------------------------------
+    {
+        "_useGraphicsAsPins": true,
+        "_items": [
+            {
+                "_top": 25,
+                "_left": 25,
+                "title": "Hotspot 1 title",
+                "body": "This is display text 1.",
+                "strapline": "Hotspot 1 strapline",
+                "_imageAlignment": "right",
+                "_classes": "",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "Copyright © 2019",
+                    "_classes": ""
+                },
+                "_tooltip": {
+                    "_isEnabled": false,
+                    "text": "{{ariaLabel}}"
+                }
+            },
+            {
+                "_top": 50,
+                "_left": 50,
+                "title": "Hotspot 2 title",
+                "body": "This is display text 2.",
+                "strapline": "Hotspot 2 strapline",
+                "_imageAlignment": "right",
+                "_classes": "",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "_tooltip": {
+                    "_isEnabled": false,
+                    "text": "{{ariaLabel}}"
+                }
+            }
+        ]
+    }
+
+    // Example using graphic pins
+    // In the following example there is a background image and each pin
+    // is an image rather than a pin icon
+    // --------------------------------------------------
+    {
+        "_items": [
+            {
+                "_left": 25,
+                "_top": 25,
+                "title": "Hotspot 1 title",
+                "body": "This is display text 1.",
+                "strapline": "Hotspot 1 strapline",
+                "_imageAlignment": "right",
+                "_classes": "",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "Copyright © 2019",
+                    "_classes": ""
+                },
+                "_tooltip": {
+                    "_isEnabled": false,
+                    "text": "{{ariaLabel}}"
+                },
+                "_pin": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": ""
+                }
+            },
+            {
+                "_left": 50,
+                "_top": 50,
+                "title": "Hotspot 2 title",
+                "body": "This is display text 2.",
+                "strapline": "Hotspot 2 strapline",
+                "_imageAlignment": "right",
+                "_classes": "",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "_tooltip": {
+                    "_isEnabled": false,
+                    "text": "{{ariaLabel}}"
+                },
+                "_pin": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": ""
+                }
+            }
+        ]
+    }

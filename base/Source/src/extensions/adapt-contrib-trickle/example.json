@@ -1,0 +1,57 @@
+    // TO HAVE A TRICKLE BUTTON ON ALL BLOCKS IN AN ARTICLE
+    // put in article.json
+    "_trickle": {
+        "_isEnabled": true
+    }
+
+    // Manual Configuration Options
+    "_trickle": {
+        "_isEnabled": true,
+        "_isInherited": false,
+        "_autoScroll": true,
+        "_scrollDuration": 500,
+        "_onChildren": true,
+        "_scrollTo": "@block +1",
+        "_completionAttribute": "_isInteractionComplete|_isComplete", //(default=_isComplete)
+        "_button": {
+            "_isEnabled": true,
+            "_comment": "_styleBeforeCompletion = hidden | disabled | visible",
+            "_styleBeforeCompletion": "hidden",
+            "_comment": "_styleAfterClick = hidden | disabled | visible",
+            "_styleAfterClick": "hidden",
+            "_isFullWidth": true,
+            "_comment": "_autoHide = it is recommended this be left set to false in courses that need to be screenreader-compatible.",
+            "_autoHide": false,
+            "_className": "",
+            "_hasIcon": false,
+            "text": "Continue",
+            "ariaLabel": "",
+            "disabledText": "",
+            "disabledAriaLabel": "",
+            "startText": "Begin",
+            "startAriaLabel": "",
+            "finalText": "Finish",
+            "finalAriaLabel": "",
+            "_component": "trickle-button",
+            "_showEndOfPage": true
+        },
+        "_stepLocking": {
+            "_isEnabled": true,
+            "_isCompletionRequired": true,
+            "_isLockedOnRevisit": false
+        }
+    }
+
+    // Override which completion data attribute is used to test when the
+    // trickle button should be displayed
+    // Put in config.json
+    "_trickle": {
+        "_logState": false,
+        "_completionAttribute": "_isInteractionComplete|_isComplete", //(default=_isComplete)
+    }
+
+    // Disable Trickle globally
+    // Put in config.json
+    "_trickle": {
+        "_isEnabled": false
+    }

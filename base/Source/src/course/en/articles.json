@@ -1,0 +1,409 @@
+[
+  {
+    "_id": "a-01-01",
+    "_parentId": "co-01-how-to-use",
+    "_type": "article",
+    "_classes": "",
+    "title": "How to Use This Module 1",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-01-02",
+    "_parentId": "co-01-how-to-use",
+    "_type": "article",
+    "_classes": "",
+    "title": "How to Use This Module 2",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-01-03",
+    "_parentId": "co-01-how-to-use",
+    "_type": "article",
+    "_classes": "",
+    "title": "How to Use This Module 3",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-01-04",
+    "_parentId": "co-01-how-to-use",
+    "_type": "article",
+    "_classes": "",
+    "title": "How to Use This Module 4",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-01-05",
+    "_parentId": "co-01-how-to-use",
+    "_type": "article",
+    "_classes": "",
+    "title": "navigation",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-02-01",
+    "_parentId": "co-02-introduction",
+    "_type": "article",
+    "_classes": "",
+    "title": "Welcome",
+    "displayTitle": "Welcome",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "a-02-02",
+    "_parentId": "co-02-introduction",
+    "_type": "article",
+    "_classes": "",
+    "title": "Module Summary",
+    "displayTitle": "Module Summary",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "a-02-03",
+    "_parentId": "co-02-introduction",
+    "_type": "article",
+    "_classes": "",
+    "title": "Module Learning Objectives",
+    "displayTitle": "Module Learning Objectives",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "a-02-04",
+    "_parentId": "co-02-introduction",
+    "_type": "article",
+    "_classes": "",
+    "title": "navigation",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-03-01",
+    "_parentId": "co-03-ch1",
+    "_type": "article",
+    "_classes": "",
+    "title": "Chapter 1",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-03-02",
+    "_parentId": "co-03-ch1",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 1.1: Body Copy, Lists and Tables",
+    "displayTitle": "Section 1.1: Body Copy, Lists and Tables",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-03-03",
+    "_parentId": "co-03-ch1",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 1.2: Figures and Callouts",
+    "displayTitle": "Section 1.2: Figures and Callouts",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-03-04",
+    "_parentId": "co-03-ch1",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 1.3: Side by Side",
+    "displayTitle": "Section 1.3: Side by Side",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-03-05",
+    "_parentId": "co-03-ch1",
+    "_type": "article",
+    "_classes": "",
+    "title": "Key Concepts",
+    "displayTitle": "Key Concepts",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "a-03-06",
+    "_parentId": "co-03-ch1",
+    "_type": "article",
+    "_classes": "",
+    "title": "Check Your Progress",
+    "displayTitle": "Check Your Progress",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    },
+    "_assessment": {
+      "_isEnabled": true,
+      "_id": "Assessment 1",
+      "_suppressMarking": false,
+      "_scoreToPass": 75,
+      "_correctToPass": 0,
+      "_isPercentageBased": true,
+      "_includeInTotalScore": false,
+      "_assessmentWeight": 1,
+      "_isResetOnRevisit": false,
+      "_attempts": 2,
+      "_allowResetIfPassed": true,
+      "_scrollToOnReset": false,
+      "_banks": {
+        "_isEnabled": false,
+        "_split": "2,1",
+        "_randomisation": false
+      },
+      "_randomisation": {
+        "_isEnabled": false,
+        "_blockCount": 1
+      },
+      "_questions": {
+        "_resetIncorrectOnly": true,
+        "_resetType": "hard",
+        "_comment": "For 'soft', when using trickle, please set the trickle Completion Attribute to `_isInteractionComplete'.",
+        "_canShowFeedback": true,
+        "_canShowMarking": true,
+        "_canShowModelAnswer": false
+      }
+    }
+  },
+  {
+    "_id": "a-03-07",
+    "_parentId": "co-03-ch1",
+    "_type": "article",
+    "_classes": "",
+    "title": "navigation",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-04-01",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Chapter 2",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-04-02",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 2.1: Accordions and Tabs",
+    "displayTitle": "Section 2.1: Accordions and Tabs",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-04-03",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 2.2: Hot Spots, Carousel and Popups",
+    "displayTitle": "Section 2.2: Hot Spots, Carousel and Popups",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-04-04",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 2.3: Sliders, Spacer and Table",
+    "displayTitle": "Section 2.3: Sliders, Spacer and Table",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-04-05",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 2.4: Video",
+    "displayTitle": "Section 2.4: Video",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-04-06",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Key Concepts",
+    "displayTitle": "Key Concepts",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_id": "a-04-07",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Check Your Progress",
+    "displayTitle": "Check Your Progress",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    },
+    "_assessment": {
+      "_isEnabled": true,
+      "_id": "Assessment 2",
+      "_suppressMarking": false,
+      "_scoreToPass": 75,
+      "_correctToPass": 0,
+      "_isPercentageBased": true,
+      "_includeInTotalScore": false,
+      "_assessmentWeight": 1,
+      "_isResetOnRevisit": false,
+      "_attempts": 2,
+      "_allowResetIfPassed": true,
+      "_scrollToOnReset": false,
+      "_banks": {
+        "_isEnabled": false,
+        "_split": "2,1",
+        "_randomisation": false
+      },
+      "_randomisation": {
+        "_isEnabled": false,
+        "_blockCount": 1
+      },
+      "_questions": {
+        "_resetIncorrectOnly": true,
+        "_resetType": "hard",
+        "_comment": "For 'soft', when using trickle, please set the trickle Completion Attribute to `_isInteractionComplete'.",
+        "_canShowFeedback": true,
+        "_canShowMarking": true,
+        "_canShowModelAnswer": false
+      }
+    }
+  },
+  {
+    "_id": "a-04-08",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "Section 2.5: Question Components",
+    "displayTitle": "Section 2.5: Question Components",
+    "body": "",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "a-04-09",
+    "_parentId": "co-04-ch2",
+    "_type": "article",
+    "_classes": "",
+    "title": "navigation",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-05-01",
+    "_parentId": "co-05-glossary",
+    "_type": "article",
+    "_classes": "",
+    "title": "Glossary",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-05-02",
+    "_parentId": "co-05-glossary",
+    "_type": "article",
+    "_classes": "",
+    "title": "navigation",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-06-01",
+    "_parentId": "co-06-references",
+    "_type": "article",
+    "_classes": "",
+    "title": "References",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-06-02",
+    "_parentId": "co-06-references",
+    "_type": "article",
+    "_classes": "",
+    "title": "navigation",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  },
+  {
+    "_id": "a-07-01",
+    "_parentId": "co-07-congratulations",
+    "_type": "article",
+    "_classes": "",
+    "title": "Congratulations",
+    "displayTitle": "",
+    "body": "",
+    "instruction": ""
+  }
+]

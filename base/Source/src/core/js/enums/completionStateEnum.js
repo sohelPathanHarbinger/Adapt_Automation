@@ -1,0 +1,9 @@
+const COMPLETION_STATE = ENUM([
+  ['NOT ATTEMPTED', 'NOTATTEMPTED'],
+  'INCOMPLETE',
+  'COMPLETED',
+  'PASSED',
+  'FAILED'
+]);
+
+export default COMPLETION_STATE;

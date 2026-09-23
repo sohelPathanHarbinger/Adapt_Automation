@@ -1,0 +1,51 @@
+.drawer {
+  &__item-btn {
+    display: block;
+    padding: @item-padding * 2 + 0.5rem @item-padding + 0.2rem;
+    background-color: @drawer-item;
+    border-bottom: 1px solid white;
+    color: @drawer-item-inverted;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: @primary_alpha;
+      color: @drawer-item-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__item-btn.is-disabled {
+    background-color: @disabled;
+    color: @disabled-inverted;
+  }
+
+  &__item-btn.is-selected {
+    background-color: @item-color-selected;
+    color: @drawer-item-inverted-selected;
+  }
+
+  &__item-btn.glossary__item-term.is-selected {
+    border-color: #20223E;
+  }
+
+  &__item-title {
+    margin-bottom: @drawer-title-margin;
+    .drawer-item-title;
+    font-weight: 700;
+    text-align: left;
+
+    .dir-rtl & {
+      text-align: right;
+    }
+  }
+
+  &__item-body {
+    margin-bottom: @drawer-body-margin;
+    .drawer-item-body;
+    font-size: 1rem;
+    text-align: left;
+
+    .dir-rtl & {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.mcq-item {
+  &__label {
+    margin-bottom: @item-margin * 1.2;
+    background: @semiWhite;
+    color: @font-color;
+    border-radius: @item-border-radius + 0.07rem;
+
+    .no-touch &:not(.is-disabled):not(.is-selected):hover,
+    html:not(.a11y-disable-focusoutline) .mcq-item__input:focus-visible + & {
+      background: @blockTitleColor;
+      color: @btn-color-inverted;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+
+    .no-touch &:not(.is-disabled):not(.is-selected):hover .mcq-item__icon {
+      .effect-scalePulse;
+    }
+  }
+
+  &__label.is-disabled {
+    background: @disabled;
+    color: @disabled-inverted;
+  }
+
+  &__label.is-selected {
+    background: @primary;
+    color: @btn-color-inverted;
+  }
+
+  &__state {
+    position: absolute;
+    top: 50%;
+    left: @item-padding;
+    .transform(translateY(-50%));
+
+    .dir-rtl & {
+      left: inherit;
+      right: @item-padding;
+    }
+  }
+
+  &__text {
+    padding: @item-padding @item-padding @item-padding (@icon-size + (@item-padding * 2));
+    font-weight: bold;
+
+    .dir-rtl & {
+      padding-left: @item-padding;
+      padding-right: @icon-size + (@item-padding * 2);
+    }
+  }
+}
+.mcq__body{
+  font-weight: bold;
+  // margin-top: 1rem;
+}
+.mcq__instruction{
+  font-weight: normal;
+}

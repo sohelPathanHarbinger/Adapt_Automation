@@ -1,0 +1,301 @@
+{
+  "_id": "course",
+  "_type": "course",
+  "_classes": "",
+  "_htmlClasses": "",
+  "title": "Base Sample Module",
+  "displayTitle": "",
+  "description": "",
+  "body": "Base Sample Module",
+  "instruction": "",
+  "_lockType": "",
+  "_buttons": {
+    "_submit": {
+      "buttonText": "Submit",
+      "ariaLabel": "Submit"
+    },
+    "_reset": {
+      "buttonText": "Reset",
+      "ariaLabel": "Reset"
+    },
+    "_showCorrectAnswer": {
+      "buttonText": "Show correct answer",
+      "ariaLabel": "Show correct answer"
+    },
+    "_hideCorrectAnswer": {
+      "buttonText": "Show your answer",
+      "ariaLabel": "Show your answer"
+    },
+    "_showFeedback": {
+      "buttonText": "Show feedback",
+      "ariaLabel": "Show feedback"
+    },
+    "remainingAttemptsText": "attempts remaining",
+    "remainingAttemptText": "final attempt",
+    "disabledAriaLabel": "This button is disabled at the moment"
+  },
+  "_globals": {
+    "_moduleTitle": "Base Sample Module",
+    "_learnerInfo": {
+      "id": "student.name@example.org",
+      "name": "Name, Student",
+      "firstname": "Student",
+      "lastname": "Name"
+    },
+    "_accessibility": {
+      "skipNavigationText": "Skip navigation",
+      "_ariaLabels": {
+        "answeredIncorrectly": "You answered incorrectly",
+        "answeredCorrectly": "You answered correctly",
+        "selectedAnswer": "selected",
+        "unselectedAnswer": "not selected",
+        "skipNavigation": "Skip Navigation",
+        "previous": "Back",
+        "navigationDrawer": "Open course resources.",
+        "close": "Close",
+        "closeDrawer": "Close drawer",
+        "closeResources": "Close resources",
+        "drawer": "Top of side drawer",
+        "closePopup": "Close popup",
+        "next": "Next",
+        "done": "Done",
+        "complete": "Completed",
+        "incomplete": "Incomplete",
+        "incorrect": "Incorrect",
+        "correct": "Correct",
+        "locked": "Locked",
+        "visited": "Visited"
+      }
+    },
+    "_extensions": {
+      "_hint": {
+        "openButtonText": "Open hint"
+      },
+      "_drawer": {
+        "_navOrder": 100
+      },
+      "_navigation": {
+        "_skipButton": {
+          "_navOrder": -100
+        },
+        "_backButton": {
+          "_navOrder": 0
+        },
+        "_spacers": [
+          {
+            "_navOrder": 0
+          }
+        ]
+      },
+      "_audio": {
+        "navigationAriaLabel": "Open course audio.",
+        "playAriaLabel": "Play audio.",
+        "pauseAriaLabel": "Pause audio.",
+        "stopAriaLabel": "Stop audio."
+      }
+    }
+  },
+  "_latestTrackingId": 39,
+  "_pageLevelProgress": {
+    "_isEnabled": true,
+    "_showPageCompletion": false,
+    "_isCompletionIndicatorEnabled": false,
+    "_isShownInNavigationBar": true
+  },
+  "_resources": {
+    "_isEnabled": true,
+    "title": "Resources",
+    "description": "View resources for this course by clicking here.",
+    "_filterButtons": {
+      "all": "All",
+      "document": "Document",
+      "media": "Media",
+      "link": "Link"
+    },
+    "_filterAria": {
+      "allAria": "View all resources",
+      "documentAria": "View document resources",
+      "mediaAria": "View media resources",
+      "linkAria": "View resource links"
+    },
+    "_resourcesItems": [
+      {
+        "_type": "document",
+        "title": "Print",
+        "description": "PDF Version of the module",
+        "_link": "assets/pdf/Base_Sample_Module_Print.pdf",
+        "filename": "Base_Sample_Module_Print.pdf",
+        "_forceDownload": true
+      }
+    ]
+  },
+  "_start": {
+    "_isEnabled": false,
+    "_startIds": [
+      {
+        "_id": "co-05",
+        "_skipIfComplete": true,
+        "_className": ""
+      }
+    ],
+    "_force": false,
+    "_isMenuDisabled": false
+  },
+  "_assessment": {
+    "_isPercentageBased": false,
+    "_scoreToPass": -1,
+    "_correctToPass": -1
+  },
+  "_bookmarking": {
+    "_isEnabled": true,
+    "_level": "component",
+    "title": "Resume?",
+    "body": "Would you like to resume the course from the location you were at last time?",
+    "_buttons": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "_BBIO": {
+    "_favIcon": {
+      "_src": ""
+    }
+  },
+  "_glossary": {
+    "_isEnabled": true,
+    "_drawerOrder": 1,
+    "title": "Glossary",
+    "description": "Select here to view the glossary for this course",
+    "clearSearch": "Clear search",
+    "searchItemsAlert": "{{filteredItems.length}} found",
+    "searchPlaceholder": "Search",
+    "searchWithInDescriptionLabel": "Search within Description",
+    "itemNotFoundMessage": "No results found",
+    "_isIndexEnabled": false,
+    "_isGroupHeadersEnabled": false,
+    "_isSearchEnabled": true,
+    "_glossaryItems": [
+      {
+        "term": "base sample module",
+        "description": "the course in base/Source: one sample of every component the automation can build"
+      },
+      {
+        "term": "glossary term",
+        "description": "a word marked in the storyboard with the Glossary item character style, shown to the learner as a popup"
+      },
+      {
+        "term": "highlighted in boldface type",
+        "description": "the way a glossary term appears in the copy"
+      }
+    ]
+  },
+  "_boxMenu": {
+    "_graphic": {
+      "alt": "",
+      "_src": ""
+    },
+    "_backgroundImage": {
+      "_xlarge": "assets/GUI/background.png",
+      "_large": "assets/GUI/background.png",
+      "_medium": "assets/GUI/background.png",
+      "_small": "assets/GUI/background.png"
+    },
+    "_backgroundStyles": {
+      "_backgroundSize": "cover",
+      "_backgroundRepeat": "no-repeat",
+      "_backgroundPosition": "center bottom"
+    },
+    "_menuHeader": {
+      "_textAlignment": {
+        "_title": "left",
+        "_body": "left",
+        "_instruction": "left"
+      },
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundSize": "contain",
+        "_backgroundRepeat": "repeat",
+        "_backgroundPosition": "center center"
+      }
+    }
+  },
+  "_audio": {
+    "_isEnabled": true,
+    "_reducedTextisEnabled": false,
+    "_autoplay": false,
+    "_autoPlayOnce": true,
+    "_showOnNavbar": false,
+    "_pauseStopAction": "pause",
+    "_triggerPosition": 40,
+    "title": "Audio",
+    "description": "Click here to view the audio settings for this course.",
+    "_drawerOrder": 0,
+    "_channels": {
+      "_narration": {
+        "_isEnabled": true,
+        "_status": 1,
+        "title": "Audio",
+        "descriptionOn": "Select one of the icons below to change your audio settings. You can change your selection back by reselecting the icon.",
+        "descriptionOff": "Select one of the icons below to change your audio settings. You can change your selection back by reselecting the icon.",
+        "toggleAutoplay": "Select this icon if you want the narrator audio to only play when you select the audio buttons in the course.",
+        "autoplayAria": "Audio Autoplay",
+        "toggleOn": "Select this icon if you want the narrator audio to automatically play as you work through the course.",
+        "audioOnAria": "Audio On",
+        "toggleOff": "Select this icon to remove all narrator audio from the course.",
+        "audioOffAria": "Audio Off"
+      },
+      "_effects": {
+        "_isEnabled": false,
+        "_status": 1,
+        "title": "Sound effects",
+        "descriptionOn": "Sound effects are currently turned on. Select the icon below to turn the sound effects off.",
+        "descriptionOff": "Sound effects are currently turned off. Select the icon below to turn the sound effects on."
+      },
+      "_music": {
+        "_isEnabled": false,
+        "_status": 1,
+        "title": "Music",
+        "descriptionOn": "Music is currently turned on. Select the icon below to turn the music off.",
+        "descriptionOff": "Music is currently turned off. Select the icon below to turn the music on."
+      }
+    },
+    "_reducedText": {
+      "title": "Text",
+      "descriptionFull": "The text is set to full. Select the button below if you would like the text to summarise the audio.",
+      "descriptionReduced": "The text is set to reduced. Select the button below if you would like the text to match the audio exactly.",
+      "_buttons": {
+        "full": "Set to full text",
+        "reduced": "Set to reduced text"
+      }
+    },
+    "_icons": {
+      "_audioOn": "icon-audio-on audio-volume-medium",
+      "_audioOff": "icon-audio-off audio-volume-mute",
+      "_audioPlay": "icon-audio-play audio-play",
+      "_audioPause": "icon-audio-pause audio-stop"
+    },
+    "_prompt": {
+      "_isEnabled": false,
+      "title": "Audio and text",
+      "titleNoReduced": "Audio",
+      "bodyAudioOn": "Audio is turned on by default in this module. You can turn the audio on or off at any time by selecting the &nbsp;<div class='audio-volume-medium icon-audio-on' style='display:inline'></div> icon.<br><br>You can choose either full or reduced on-screen text. The full text option matches the audio exactly. The reduced text option summarises the audio.<br><br>Please select full or reduced text (you can change your preference at any time by selecting the &nbsp;<div class='audio-volume-medium icon-audio-on' style='display:inline'></div> icon).",
+      "bodyAudioOff": "Audio is turned off by default in this module. You can turn the audio on or off at any time by selecting the <div class='audio-volume-mute audio-notify-icon'></div> icon.<br><br>You can choose either full or reduced on-screen text. The full text option matches the audio exactly. The reduced text option summarises the audio.<br><br>Please select full or reduced text (you can change your preference at any time by selecting the <div class='audio-volume-mute audio-notify-icon'></div> icon).",
+      "bodyNoReducedAudioOn": "Audio is turned on by default in this module. Please select Continue or Turn audio off (you can change your preference at any time by selecting the &nbsp;<div class='audio-volume-medium icon-audio-on' style='display:inline'></div> icon).",
+      "bodyNoReducedAudioOff": "Audio is turned off by default in this module. Please select Continue or Turn audio on (you can change your preference at any time by selecting the <div class='audio-volume-mute audio-notify-icon'></div> icon).",
+      "_buttons": {
+        "full": "Full",
+        "reduced": "Reduced",
+        "continue": "Continue",
+        "turnOff": "Turn audio off",
+        "turnOn": "Turn audio on"
+      },
+      "_graphic": {
+        "src": ""
+      }
+    }
+  }
+}

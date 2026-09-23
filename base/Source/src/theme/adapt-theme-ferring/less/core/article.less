@@ -1,0 +1,63 @@
+.article {
+  position: relative;
+  margin: auto;
+
+  @media(min-width: @device-width-small) {
+    width: inherit;
+  }
+
+  @media(min-width: @device-width-large) {
+    width: calc(60rem - 20px);
+  }
+  padding: 2.5rem;
+  // border: solid 2px @fifth;
+   border-radius: 0.6rem;
+   background: white;
+   margin-bottom: 1.5rem;
+   &.no-margin{
+       margin-bottom:0;
+   }
+
+  &.has-bg-image>.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__header-inner {
+    // .l-container-padding(@article-header-padding-ver, @article-header-padding-hoz);
+    padding: 0;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    .article-title;
+    color: @heading-color;
+    font-size: 2.2rem !important;
+    font-weight: 400;
+  }
+
+  &__body {
+    margin-bottom: @article-body-margin;
+  }
+
+  &__instruction {
+    margin-bottom: @article-instruction-margin;
+    .instruction-text;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+
+}

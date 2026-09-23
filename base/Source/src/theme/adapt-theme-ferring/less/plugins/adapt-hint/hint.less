@@ -1,0 +1,148 @@
+.hint {
+  // global hint btn
+  // --------------------------------------------------
+  &__btn {
+    // z-index: 20;   
+
+
+    .dir-rtl & {
+      right: inherit;
+      left: 0;
+    }
+  }
+
+  // &__btn .icon {
+  //   .icon-question;
+  // }
+
+  &__btn.is-open .icon {
+    .icon-cross;
+  }
+
+  // slide out pop up
+  // --------------------------------------------------
+  &__widget {
+    width: 20rem;
+    z-index: 15;
+    opacity: 0;
+
+    .dir-rtl & {
+      right: inherit;
+      left: 0;
+    }
+  }
+
+  &__widget.is-open {
+    opacity: 1;
+  }
+}
+
+// --------------------------------------------------
+// THEME
+// --------------------------------------------------
+.hint {
+  // global hint btn
+  // --------------------------------------------------
+  &__btn {
+    position: absolute;
+    padding: @icon-padding / 2;
+    // background-color: transparent ;
+    // background: @secondary;
+    color: @btn-color-inverted;
+    border-radius: 50%;
+    right:-3.8rem;
+    top: -1rem;
+
+    @media screen and (max-width:60rem) {
+      right:-1rem;
+    }
+
+    .no-touch &:hover {
+      background-color: transparent ;
+      color: @btn-color-inverted-hover;
+      // content:  url("assets/GUI/Hover/Quick-Fact.png");
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  // widget open/close animation
+  // --------------------------------------------------
+  &__widget {
+    .transform(scale(0,0));
+    .transition(all .5s ease-in-out);
+    transform-origin: top right;
+
+    .dir-rtl & {
+      transform-origin: top left;
+    }
+  }
+
+  &__widget.is-open {
+    .transform(scale(1,1));
+  }
+
+  // slide out pop up
+  // --------------------------------------------------
+  &__widget {
+    top: (@icon-size + @icon-padding) / 2;
+    right: -1rem;
+    // padding: @item-padding;
+    background-color: @white;
+    border: .125rem solid @secondary;
+
+    .dir-rtl & {
+      right: inherit;
+      left: (@icon-size + @icon-padding) / 2;
+    }
+  }
+
+  // slide out item
+  // --------------------------------------------------
+  &__item:not(:last-child) {
+    margin-bottom: @item-margin * 2;
+  }
+
+  &__item-title {
+    .item-title;
+    height: 3rem;
+    position: relative;
+    padding: 1rem;
+    background: @primary;
+    color: white;
+    font-weight: 600;
+  }
+  &__item-body{
+    padding: 1rem;
+  }
+
+  // &__item-title.has-margin {
+  //   // margin-bottom: @item-title-margin;
+  // }
+
+  &__item-body a {
+    .link-text;
+  }
+}
+
+// prevent overlap with first element within the component header
+// --------------------------------------------------
+.component.has-hint .component {
+  &__header-inner > div:first-of-type {
+    padding-right: @icon-size + @icon-padding;
+
+    .dir-rtl & {
+      padding-right: inherit;
+      padding-left: @icon-size + @icon-padding;
+    }
+  }
+}
+
+.top{
+  &__-2{
+    .hint__btn{
+      top: -2rem;
+      margin-top: 0;
+    }
+    
+  }
+}

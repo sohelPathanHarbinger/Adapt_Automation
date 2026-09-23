@@ -1,0 +1,204 @@
+.audio-navigation {
+    .audio-button {
+        float: right;
+        .dir-rtl & {
+            float: left;
+        }
+        color: @white;
+        padding: @navigation-padding;
+        .transition-color;
+        &:hover{
+            color: @navigation-icon-color-hover;
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+}
+
+.audio-inner {
+    .top-left,
+    .bottom-left {
+        float: left;
+        .dir-rtl & {
+            float: right;
+        }
+    }
+
+    .bottom-left {
+        float: left;
+        .dir-rtl & {
+            float: right;
+        }
+    }
+
+    .top-right,
+    .bottom-right {
+        float: right;
+        .dir-rtl & {
+            float: left;
+        }
+    }
+}
+
+.audio-controls {
+    position:relative;
+    right:5px;
+    top:-7px;
+    .audio-toggle {
+        color: @item-text-color;
+        background-color: transparent;
+        padding: 8px;
+        .transition-all-colors;
+        &:hover{
+            background-color: @item-color-hover;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+}
+
+.audio-drawer {
+    .drawer-audio-toggle {
+        color: @drawer-item-text-color;
+        .transition-color;
+        .no-touch &:hover {
+            color: @drawer-icon-color-hover;
+        }
+        margin-top: @drawer-item-padding-top;
+        margin-bottom: @drawer-item-padding-bottom;
+    }
+    .drawer-item-open {
+        width: auto !important;
+
+        &:hover {
+          background-color: @drawer-item-color !important;
+        }
+    }
+    .drawer-audio-button {
+        margin-top: @drawer-item-padding-top;
+        margin-bottom: @drawer-item-padding-bottom;
+        width: 100%;
+        color: @drawer-item-text-color;
+        background-color: @drawer-item-color;
+        .no-touch &:hover {
+            color: @drawer-item-text-color-hover;
+            background-color: @drawer-item-color-hover;
+        }
+    }
+}
+
+// Ico moon font used for default audio icon
+@font-face {
+    font-family: 'audio';
+    src: url(fonts/audio.woff);
+}
+
+.icon-audio-on,
+.icon-audio-off,
+.icon-audio-play,
+.icon-audio-pause {
+    font-family: 'audio' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    color: @foreground-color;
+    display: block;
+    font-size: @icon-size;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.audio-play:before {
+    content: "\e900";
+}
+.audio-pause:before {
+    content: "\e901";
+}
+.audio-stop:before {
+    content: "\e902";
+}
+.audio-volume-high:before {
+    content: "\e903";
+}
+.audio-volume-medium:before {
+    content: "\e904";
+}
+.audio-volume-low:before {
+    content: "\e905";
+}
+.audio-volume-mute:before {
+    content: "\e907";
+}
+.audio-volume-increase:before {
+    content: "\e908";
+}
+.audio-volume-decrease:before {
+    content: "\e909";
+}
+
+.audio-prompt {
+  .audio-prompt-image {
+    padding-bottom: @notify-padding;
+
+    @media all and (max-width: (@device-width-large + 20px)) {
+        padding-bottom: @notify-padding-top / 2;
+    }
+
+    @media all and (max-width: (@device-width-small + 20px)) {
+        padding-bottom: @notify-padding-top / 3;
+    }
+
+		img {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+  }
+
+  .audio-notify-icon {
+    .icon;
+    .icon-audio-on;
+
+    color: @notify-text-color;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .notify-popup-title {
+    text-align: center;
+    padding-right: 0 !important;
+  }
+}
+
+// mcq options less
+.mcq-component{
+   .mcq-item{
+        .item-audio-container{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            padding-top: 10px;
+            z-index: 10;
+        }
+   } 
+}
+
+.item-audio-container{
+    display: inline-table;
+  }
+
+

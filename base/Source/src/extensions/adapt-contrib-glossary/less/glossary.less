@@ -1,0 +1,64 @@
+.drawer__toolbar {
+  z-index: 2;
+}
+
+.glossary {
+  &__header {
+    position: sticky;
+    top: 0rem;
+    z-index: 1;
+  }
+
+  &__textbox-container {
+    position: relative;
+  }
+
+  &__textbox {
+    width: 100%;
+    padding-top: @item-padding;
+    padding-bottom: @item-padding;
+    padding-inline: @item-padding (@item-padding + @icon-size);
+  }
+
+  // Hide 'X' icon for IE11 and Edge 12+
+  // Issue: https://github.com/adaptlearning/adapt_framework/issues/1913
+  &__textbox::-ms-clear {
+    .u-display-none;
+  }
+
+  &__cancel-btn,
+  &__search-icon {
+    position: absolute;
+    top: 50%;
+    right: @item-padding * 2;
+    padding: 0;
+    .transform(translateY(-50%));
+    background-color: transparent;
+
+    .dir-rtl & {
+      right: inherit;
+      left: @item-padding * 2;
+    }
+  }
+
+  &__search-icon .icon {
+    .icon-search;
+  }
+
+  &__cancel-btn .icon {
+    .icon-cross;
+  }
+
+  &__index-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__items-container,
+  &__item-not-found {
+    position: relative;
+  }
+}

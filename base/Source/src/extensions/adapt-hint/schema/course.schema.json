@@ -1,0 +1,41 @@
+{
+  "$anchor": "hint-course",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "course"
+    },
+    "with": {
+      "properties": {
+        "_globals": {
+          "type": "object",
+          "default": {},
+          "properties": {
+            "_extensions": {
+              "type": "object",
+              "default": {},
+              "properties": {
+                "_hint": {
+                  "type": "object",
+                  "title": "Hint",
+                  "default": {},
+                  "properties": {
+                    "openButtonText": {
+                      "type": "string",
+                      "title": "Button ARIA label",
+                      "default": "Open hint",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.btn {
+  &__container {
+    margin-top: @btn-margin;
+  }
+
+  &-icon {
+    background: @btn-icon-color;
+    color: @btn-icon-color-inverted;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: @btn-icon-color-hover;
+      color: @btn-icon-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in; );
+    }
+  }
+
+  &-text {
+    .button-text;
+
+    &::hover {
+      color: @third;
+    }
+  }
+
+  &-text {
+    background: @btn-color;
+    color: @btn-color-inverted;
+    border-radius: @btn-border-radius;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: @btn-color-hover;
+      color: @btn-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in; );
+    }
+  }
+
+  &__action {
+    background: @blockTitleColor;
+    color: @btn-color-inverted-hover;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: @blockTitleColor;
+      color: @btn-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in; );
+    }
+  }
+
+  &__feedback {
+    background: @blockTitleColor;
+    color: @btn-color-inverted-hover;
+    border-radius: @btn-border-radius;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background: @blockTitleColor;
+      color: @btn-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in; );
+    }
+  }
+
+  &-icon.is-disabled,
+  &-text.is-disabled {
+    background: @semiWhite;
+    color: @fourth;
+    border: 1px solid @disabled;
+  }
+
+  &__feedback {
+    background: @blockTitleColor;
+    color: @btn-color-inverted;
+  }
+
+  &__feedback.is-disabled {
+    background: @semiWhite;
+    color: @fourth;
+  }
+
+
+  &-icon.is-locked,
+  &-text.is-locked {
+    background: @semiWhite;
+    color: @disabled-inverted;
+    cursor: not-allowed;
+  }
+
+  &__marking {
+    padding: @item-padding * 0.75;
+    border-radius: 50%;
+  }
+
+  .can-show-marking &__action.is-full-width,
+  .can-show-marking &__feedback.is-full-width {
+    margin-right: @icon-size + (@item-margin * 2) + ((@item-padding * 0.75) * 2);
+
+    .dir-rtl & {
+      margin-right: inherit;
+      margin-left: @icon-size + (@item-margin * 2) + ((@item-padding * 0.75) * 2);
+    }
+  }
+}

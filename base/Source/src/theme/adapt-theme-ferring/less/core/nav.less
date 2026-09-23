@@ -1,0 +1,30 @@
+.nav {
+  background-color: @white;
+  // opacity:@general-opacity;
+
+  &__inner {
+    // max-width: inherit;
+  }
+
+  &__inner {
+    padding-left: @nav-btn-margin / 2;
+    padding-right: @nav-btn-margin / 2;
+  }
+
+  &__btn {
+    margin: @nav-btn-margin (@nav-btn-margin / 2);
+    background-color: @nav;
+    color: @nav-inverted;
+    border-radius: @nav-btn-border-radius;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background-color: @nav;
+      color: @nav-inverted;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__btn-label {
+    font-size: @nav-btn-label-size;
+  }
+}

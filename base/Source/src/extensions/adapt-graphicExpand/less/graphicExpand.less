@@ -1,0 +1,108 @@
+.graphicexpand {
+
+  // position: absolute;
+  // top: 0.25rem;
+  // right: 0.25rem;
+  button {
+    padding: 1rem;
+  }
+}
+
+.graphic__attribution-inner {
+  &.has-graphicexpand-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .graphicexpand {
+    display: inline-flex;
+    position: static;
+    vertical-align: middle;
+
+    button {
+      padding: 0;
+    }
+  }
+}
+
+.hotgraphic__attribution-inner {
+  &.has-graphicexpand-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .graphicexpand {
+    display: inline-flex;
+    position: static;
+    vertical-align: middle;
+
+    button {
+      padding: 0;
+    }
+  }
+}
+
+.has-graphicexpand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .graphicexpand {
+    order: 1;
+    display: flex;
+    justify-content: end;
+    /* margin-bottom: -70px; */
+    z-index: 0;
+    /* margin-right: 30px; */
+    position: absolute;
+    /* margin-top: 30px; */
+    bottom: 20px;
+    right: -60px;
+  }
+
+  .graphic__attribution-inner .graphicexpand {
+    order: initial;
+    justify-content: flex-start;
+    position: static;
+    bottom: auto;
+    right: auto;
+  }
+
+  .hotgraphic__attribution-inner .graphicexpand {
+    order: initial;
+    justify-content: flex-start;
+    position: static;
+    bottom: auto;
+    right: auto;
+  }
+
+  .graphic__widget {
+    order: 2;
+  }
+
+  .hotgraphic__widget {
+    order: 2;
+  }
+
+  &:has(.hotgraphic__widget) {
+    .graphicexpand {
+      /* margin-bottom: 0px;
+      z-index: 0;
+      margin-right: 30px;
+      margin-top: 0px; */
+    }
+  }
+}
+
+.notify.graphicexpand-popup {
+  .notify__popup-inner {
+    max-width: 100%;
+
+    img {
+      min-width: auto;
+      margin: auto;
+    }
+  }
+}

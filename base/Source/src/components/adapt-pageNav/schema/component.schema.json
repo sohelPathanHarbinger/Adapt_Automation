@@ -1,0 +1,603 @@
+{
+  "$anchor": "pageNav-component",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$merge": {
+    "source": {
+      "$ref": "component"
+    },
+    "with": {
+      "required": [
+        "_buttons"
+      ],
+      "properties": {
+        "_supportedLayout": {
+          "type": "string",
+          "title": "Supported layout",
+          "default": "full-width",
+          "_adapt": {
+            "editorOnly": true
+          }
+        },
+        "instruction": {
+          "type": "string",
+          "title": "Instruction",
+          "description": "This is the instruction text",
+          "default": "",
+          "_adapt": {
+            "translatable": true
+          }
+        },
+        "_loopStyle": {
+          "type": "string",
+          "title": "Is Continuous",
+          "description": "allPages = loop sequentially through all pages in course, siblings = loop sequentially through all pages in current parent object, none = disable previous and next buttons at start and end of the pages in the current parent object",
+          "default": "none",
+          "enum": [
+            "allPages",
+            "siblings",
+            "none"
+          ],
+          "_backboneForms": "Select"
+        },
+        "_shouldSkipOptionalPages": {
+          "type": "boolean",
+          "title": "Skip optional pages",
+          "default": false
+        },
+        "_buttons": {
+          "type": "object",
+          "title": "Buttons settings",
+          "required": [
+            "_previous",
+            "_root",
+            "_up",
+            "_returnToPreviousLocation",
+            "_next",
+            "_close"
+          ],
+          "properties": {
+            "_previous": {
+              "type": "object",
+              "title": "Previous button",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Show",
+                  "default": false
+                },
+                "_lockUntilPageComplete": {
+                  "type": "boolean",
+                  "title": "Lock until page complete",
+                  "description": "For use when the standard Adapt locking system doesn't apply, such as in a start page before the main menu",
+                  "default": false
+                },
+                "_order": {
+                  "type": "number",
+                  "title": "Order",
+                  "description": "Button display order",
+                  "default": 0
+                },
+                "_classes": {
+                  "type": "string",
+                  "title": "Classes",
+                  "default": ""
+                },
+                "_iconClass": {
+                  "type": "string",
+                  "title": "Icon class",
+                  "description": "CSS class name to be applied to the button icon. Suggested: icon-controls-left",
+                  "default": "icon-controls-left"
+                },
+                "_iconAlignment": {
+                  "type": "string",
+                  "title": "Icon alignment",
+                  "description": "Determines how the icon is aligned to the text.",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                  ],
+                  "_backboneForms": "Select"
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Button text",
+                  "description": "Text that appears on the button. Optional since you can only use an icon.",
+                  "default": "Previous",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "title": "ARIA label",
+                  "default": "Previous Page",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "_navTooltip": {
+                  "type": "object",
+                  "title": "Button tooltip",
+                  "default": {},
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "title": "Enable tooltip for this button",
+                      "default": true
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "",
+                      "default": "Home",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                },
+                "_customRouteId": {
+                  "type": "string",
+                  "title": "Override the route id",
+                  "description": "Enter the Friendly id of the page that the button should direct the user to. For use when non-standard navigation is required.",
+                  "default": ""
+                }
+              }
+            },
+            "_root": {
+              "type": "object",
+              "title": "Root button",
+              "description": "Takes you back to top level menu",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Show",
+                  "default": false
+                },
+                "_lockUntilPageComplete": {
+                  "type": "boolean",
+                  "title": "Lock until page complete",
+                  "description": "For use when the standard Adapt locking system doesn't apply, such as in a start page before the main menu",
+                  "default": false
+                },
+                "_order": {
+                  "type": "number",
+                  "title": "Order",
+                  "description": "Button display order",
+                  "default": 0
+                },
+                "_classes": {
+                  "type": "string",
+                  "title": "Classes",
+                  "default": ""
+                },
+                "_iconClass": {
+                  "type": "string",
+                  "title": "Icon class",
+                  "description": "CSS class name to be applied to the button icon. Suggested: icon-home",
+                  "default": "icon-home"
+                },
+                "_iconAlignment": {
+                  "type": "string",
+                  "title": "Icon alignment",
+                  "description": "Determines how the icon is aligned to the text.",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                  ],
+                  "_backboneForms": "Select"
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Button text",
+                  "description": "Text that appears on the button. Optional since you can only use an icon.",
+                  "default": "Menu",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "title": "ARIA label",
+                  "default": "Go to main menu",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "_navTooltip": {
+                  "type": "object",
+                  "title": "Button tooltip",
+                  "default": {},
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "title": "Enable tooltip for this button",
+                      "default": true
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "",
+                      "default": "Home",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                },
+                "_customRouteId": {
+                  "type": "string",
+                  "title": "Override the route id",
+                  "description": "Enter the Friendly id of the page that the button should direct the user to. For use when non-standard navigation is required.",
+                  "default": ""
+                }
+              }
+            },
+            "_up": {
+              "type": "object",
+              "title": "Up button",
+              "description": "Takes you to the menu that is the next level up in the hierarchy",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Show",
+                  "default": false
+                },
+                "_lockUntilPageComplete": {
+                  "type": "boolean",
+                  "title": "Lock until page complete",
+                  "description": "For use when the standard Adapt locking system doesn't apply, such as in a start page before the main menu",
+                  "default": false
+                },
+                "_order": {
+                  "type": "number",
+                  "title": "Order",
+                  "description": "Button display order",
+                  "default": 0
+                },
+                "_classes": {
+                  "type": "string",
+                  "title": "Classes",
+                  "default": ""
+                },
+                "_iconClass": {
+                  "type": "string",
+                  "title": "Icon class",
+                  "description": "CSS class name to be applied to the button icon. Suggested: icon-controls-up",
+                  "default": "icon-controls-up"
+                },
+                "_iconAlignment": {
+                  "type": "string",
+                  "title": "Icon alignment",
+                  "description": "Determines how the icon is aligned to the text.",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                  ],
+                  "_backboneForms": "Select"
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Button text",
+                  "description": "Text that appears on the button. Optional since you can only use an icon.",
+                  "default": "Back to menu",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "title": "ARIA label",
+                  "default": "Back to menu",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "_navTooltip": {
+                  "type": "object",
+                  "title": "Button tooltip",
+                  "default": {},
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "title": "Enable tooltip for this button",
+                      "default": true
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "",
+                      "default": "Home",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                },
+                "_customRouteId": {
+                  "type": "string",
+                  "title": "Override the route id",
+                  "description": "Enter the Friendly id of the page that the button should direct the user to. For use when non-standard navigation is required.",
+                  "default": ""
+                }
+              }
+            },
+            "_returnToPreviousLocation": {
+              "type": "object",
+              "title": "Return to previous location button",
+              "description": "Navigates to the previous location. For example, if the user navigates to a help page that is not part of the normal flow, this would take them back to the previous page that they visited",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Show",
+                  "default": false
+                },
+                "_lockUntilPageComplete": {
+                  "type": "boolean",
+                  "title": "Lock until page complete",
+                  "description": "For use when the standard Adapt locking system doesn't apply, such as in a start page before the main menu",
+                  "default": false
+                },
+                "_order": {
+                  "type": "number",
+                  "title": "Order",
+                  "description": "Button display order",
+                  "default": 0
+                },
+                "_classes": {
+                  "type": "string",
+                  "title": "Classes",
+                  "default": ""
+                },
+                "_iconClass": {
+                  "type": "string",
+                  "title": "Icon class",
+                  "description": "CSS class name to be applied to the button icon. Suggested: icon-controls-left",
+                  "default": "icon-controls-left"
+                },
+                "_iconAlignment": {
+                  "type": "string",
+                  "title": "Icon alignment",
+                  "description": "Determines how the icon is aligned to the text.",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                  ],
+                  "_backboneForms": "Select"
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Button text",
+                  "description": "Text that appears on the button. Optional since you can only use an icon.",
+                  "default": "Return",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "title": "ARIA label",
+                  "default": "Return to previous location",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "_navTooltip": {
+                  "type": "object",
+                  "title": "Button tooltip",
+                  "default": {},
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "title": "Enable tooltip for this button",
+                      "default": true
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "",
+                      "default": "Return to previous location",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "_next": {
+              "type": "object",
+              "title": "Next button",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Show",
+                  "default": false
+                },
+                "_lockUntilPageComplete": {
+                  "type": "boolean",
+                  "title": "Lock until page complete",
+                  "description": "For use when the standard Adapt locking system doesn't apply, such as in a start page before the main menu",
+                  "default": false
+                },
+                "_order": {
+                  "type": "number",
+                  "title": "Order",
+                  "description": "Button display order",
+                  "default": 0
+                },
+                "_classes": {
+                  "type": "string",
+                  "title": "Classes",
+                  "default": ""
+                },
+                "_iconClass": {
+                  "type": "string",
+                  "title": "Icon class",
+                  "description": "CSS class name to be applied to the button icon. Suggested: icon-controls-right",
+                  "default": "icon-controls-right"
+                },
+                "_iconAlignment": {
+                  "type": "string",
+                  "title": "Icon alignment",
+                  "description": "Determines how the icon is aligned to the text.",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                  ],
+                  "_backboneForms": "Select"
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Button text",
+                  "description": "Text that appears on the button. Optional since you can only use an icon.",
+                  "default": "Next",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "title": "ARIA label",
+                  "default": "Next Page",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "_navTooltip": {
+                  "type": "object",
+                  "title": "Button tooltip",
+                  "default": {},
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "title": "Enable tooltip for this button",
+                      "default": true
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "",
+                      "default": "Home",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                },
+                "_customRouteId": {
+                  "type": "string",
+                  "title": "Override the route id",
+                  "description": "Enter the Friendly id of the page that the button should direct the user to. For use when non-standard navigation is required.",
+                  "default": ""
+                }
+              }
+            },
+            "_close": {
+              "type": "object",
+              "title": "Close button",
+              "description": "Closes the course window. Only possible if the course was launched in a popup window.",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Show",
+                  "default": false
+                },
+                "_lockUntilPageComplete": {
+                  "type": "boolean",
+                  "title": "Lock until page complete",
+                  "description": "For use when the standard Adapt locking system doesn't apply, such as in a start page before the main menu",
+                  "default": false
+                },
+                "_order": {
+                  "type": "number",
+                  "title": "Order",
+                  "description": "Button display order",
+                  "default": 0
+                },
+                "_classes": {
+                  "type": "string",
+                  "title": "Classes",
+                  "default": ""
+                },
+                "_iconClass": {
+                  "type": "string",
+                  "title": "Icon class",
+                  "description": "CSS class name to be applied to the button icon. Suggested: icon-cross",
+                  "default": "icon-cross"
+                },
+                "_iconAlignment": {
+                  "type": "string",
+                  "title": "Icon alignment",
+                  "description": "Determines how the icon is aligned to the text.",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                  ],
+                  "_backboneForms": "Select"
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Button text",
+                  "description": "Text that appears on the button. Optional since you can only use an icon.",
+                  "default": "Close",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "title": "ARIA label",
+                  "default": "Close window",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "_navTooltip": {
+                  "type": "object",
+                  "title": "Button tooltip",
+                  "default": {},
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "title": "Enable tooltip for this button",
+                      "default": true
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "",
+                      "default": "Home",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.page {
+  position: relative;
+  max-width: inherit;
+  // .l-container-padding(@page-padding-ver, @page-padding-hoz);
+
+  &.has-bg-image>.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+
+  &__inner {
+    position: relative;
+  }
+
+
+  &__header {
+    position: relative;
+    margin-bottom: 2rem;
+    
+    display: flex;
+    align-items: center;
+    
+
+  }
+
+  &__header.has-bg-image>.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__header-inner {
+    position: relative;
+    background: @primary;
+    width: 100%;
+    padding-bottom: 1rem;
+  
+
+    .l-container-padding(@page-header-padding-ver, @page-header-padding-hoz);
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: 0;
+    //   height: .5rem;
+    //   /* Thickness of your border */
+    //   width: 100%;
+    //   background: @third;
+    // }
+  }
+
+  &__title {
+    margin-bottom: @page-title-margin;
+    .page-title;
+    width: 60rem;
+    margin: auto;
+    color: @white;
+    font-size: 2.5rem;
+    // color: @primary;
+    font-weight: 700;
+
+
+    @media(max-width: @device-width-medium) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: @page-subtitle-margin;
+    .page-subtitle;
+  }
+
+  &__body {
+    margin-bottom: @page-body-margin;
+    .page-body;
+  }
+
+  &__instruction {
+    margin-bottom: @page-instruction-margin;
+    .page-instruction;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+}

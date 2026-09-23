@@ -1,0 +1,94 @@
+.narrative {
+  &__content-title {
+    margin-bottom: @item-title-margin;
+    .item-title;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  &__content-body a {
+    .link-text;
+  }
+
+  &__controls {
+    background-color: @btn-color;
+    color: @item-color-inverted;
+    // border: solid @secondary;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background-color: @btn-color-hover;
+      color: @item-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__progress {
+    background-color: @item-color;
+    border-radius: 50%;
+  }
+
+  &__progress.is-visited {
+    background-color: @visited;
+  }
+
+  &__progress.is-selected {
+    background-color: @item-color-selected;
+  }
+
+  &__strapline-btn {
+    text-align: left;
+    background-color: @item-color;
+    color: @item-color-inverted;
+
+    .dir-rtl & {
+      text-align: right;
+    }
+  }
+
+  // set icon background color to transparent to 'inherit' strapline styling
+  &__strapline-icon {
+    background-color: transparent;
+    color: @item-color-inverted;
+  }
+
+  .no-touch &__strapline-btn:not(.is-disabled):not(.is-locked):hover,
+  .no-touch &__strapline-btn:not(.is-disabled):not(.is-locked):hover &__strapline-icon {
+    color: @item-color-inverted-hover;
+    .transition(background-color @duration ease-in, color @duration ease-in;);
+  }
+
+  .no-touch &__strapline-btn:not(.is-disabled):not(.is-locked):hover {
+    background-color: @item-color-hover;
+  }
+
+  // set icon hover background color to transparent to 'inherit' strapline styling
+  .no-touch &__strapline-btn:not(.is-disabled):not(.is-locked):hover &__strapline-icon {
+    background-color: transparent;
+  }
+
+  &__strapline-btn.is-visited,
+  &__strapline-btn.is-visited &__strapline-icon {
+    color: @visited-inverted;
+  }
+
+  &__strapline-btn.is-visited {
+    background-color: @visited;
+  }
+
+  // set icon visited background color to transparent to 'inherit' strapline styling
+  &__strapline-btn.is-visited &__strapline-icon {
+    background-color: transparent;
+  }
+
+  &.has-img-zoom &__slider-image-container {
+    .img-zoom();
+  }
+
+  // mobile stacked layout
+  &__inner.is-stacked &__content-item {
+    margin-bottom: (@item-margin * 4);
+  }
+  &__inner.is-stacked &__content-image {
+    margin-bottom: @item-title-margin;
+  }
+}

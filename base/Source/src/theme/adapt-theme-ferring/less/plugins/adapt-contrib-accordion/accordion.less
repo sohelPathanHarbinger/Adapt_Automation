@@ -1,0 +1,131 @@
+.accordion-item {
+  margin-bottom: @item-margin + 0.1rem;
+
+  &__btn {
+    position: relative;
+    padding: @item-padding;
+    padding-right: @icon-size + (@item-padding * 2);
+    text-align: left;
+    background: @primary_gradient1;
+    color: @item-color-inverted;
+    border-radius: @item-border-radius * 2.2;
+    font-weight: bold;
+
+    .no-touch &:not(.is-selected):hover {
+      background: @primary_gradient_hover1;
+      border:@primary #20223E 0.125rem;
+      color: @item-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+
+    .dir-rtl & {
+      padding-right: @item-padding;
+      padding-left: @icon-size + (@item-padding * 2);
+      text-align: right;
+    }
+  }
+
+  &__btn.is-visited {
+    background: @visited;
+    // border: @primary solid 0.125rem;
+    color: @white;
+  }
+
+  &__btn.is-selected {
+    background: @item-color-selected;
+    color: @item-color-inverted-selected;
+    border: solid #20223E 0;
+    border-radius: @item-border-radius * 2.2;
+   
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: @item-padding;
+    .transform(translateY(-50%));
+
+    .dir-rtl & {
+      right: inherit;
+      left: @item-padding;
+    }
+  }
+
+  &__content {
+    padding: @item-padding;
+    border-radius: 0;
+    border: solid @primary 0.16rem;
+    border-top: 0;
+    // border-left:solid @secondary .125rem;
+    //  border-right:solid @secondary .125rem;
+    // border-bottom:solid @secondary .125rem;
+
+    .item-audio-container{
+        display: none;
+      }
+  }
+
+  &__body a {
+    .link-text;
+  }
+
+  &.has-img-zoom &__image-container {
+    .img-zoom();
+  }
+}
+
+.flip{
+  .accordion__inner{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.modern{
+  .accordion-item{
+    &__btn{
+      color: @primary !important;
+      background-color: white !important;
+      padding-left: 0;
+      padding-right: 0;
+      &:hover{
+        background-color: white !important;
+      }
+      &.is-selected {
+    border: solid transparent .125rem;
+   
+  }
+    }
+    &__content{
+      border: 0 !important;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+
+      .item-audio-container{
+        display: none;
+      }
+    }
+  }
+  .grad_border{
+    position: relative;
+    background: @primary;
+    width: 100%;
+    padding-bottom: .05rem;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: .2rem;
+      /* Thickness of your border */
+      width: 100%;
+      background: @primary;
+    }
+  }
+
+}
+  
+    
+
+

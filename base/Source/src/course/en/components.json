@@ -1,0 +1,3059 @@
+[
+  {
+    "_id": "c-01-01-01-01",
+    "_parentId": "b-01-01-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "grid__column-8 help",
+    "_layout": "left",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>This module has interactive components, such as accordions, tabs, and hotspots, that must be completed before moving forward.</p><p>Selecting the progress bar at the top right of the screen will display all the interactive components within the chapter. Once the progress bar is filled, you can move on to the next chapter.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-01-01-02",
+    "_parentId": "b-01-01-01",
+    "_type": "component",
+    "_component": "graphic",
+    "_classes": "grid__column-6 help",
+    "_layout": "right",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "assets/GUI/progress.png",
+      "small": "assets/GUI/progress.png",
+      "attribution": ""
+    },
+    "_graphicExpand": {
+      "_isEnabled": false,
+      "_button": {
+        "buttonText": "",
+        "ariaLabel": "Enlarge image",
+        "iconClass": "graphic-expand-icon"
+      },
+      "_selector": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-02-01-01",
+    "_parentId": "b-01-02-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "grid__column-8 help",
+    "_layout": "left",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>At the end of each chapter, answer the &ldquo;Check Your Progress&rdquo; questions to complete the chapter.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-02-01-02",
+    "_parentId": "b-01-02-01",
+    "_type": "component",
+    "_component": "graphic",
+    "_classes": "grid__column-6 help",
+    "_layout": "right",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "assets/GUI/cyp.png",
+      "small": "assets/GUI/cyp.png",
+      "attribution": ""
+    },
+    "_graphicExpand": {
+      "_isEnabled": false,
+      "_button": {
+        "buttonText": "",
+        "ariaLabel": "Enlarge image",
+        "iconClass": "graphic-expand-icon"
+      },
+      "_selector": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-03-01-01",
+    "_parentId": "b-01-03-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "grid__column-8 help",
+    "_layout": "left",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Glossary terms are highlighted throughout this module. The glossary can also be accessed by selecting the menu on the right.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-03-01-02",
+    "_parentId": "b-01-03-01",
+    "_type": "component",
+    "_component": "graphic",
+    "_classes": "grid__column-6 help",
+    "_layout": "right",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "assets/GUI/glossary.png",
+      "small": "assets/GUI/glossary.png",
+      "attribution": ""
+    },
+    "_graphicExpand": {
+      "_isEnabled": false,
+      "_button": {
+        "buttonText": "",
+        "ariaLabel": "Enlarge image",
+        "iconClass": "graphic-expand-icon"
+      },
+      "_selector": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-04-01-01",
+    "_parentId": "b-01-04-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "grid__column-8 help",
+    "_layout": "left",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Select the Quick Fact! and Zoom In icons at the margins to display callouts with additional information.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-04-01-02",
+    "_parentId": "b-01-04-01",
+    "_type": "component",
+    "_component": "graphic",
+    "_classes": "grid__column-6 help",
+    "_layout": "right",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "assets/GUI/callout.png",
+      "small": "assets/GUI/callout.png",
+      "attribution": ""
+    },
+    "_graphicExpand": {
+      "_isEnabled": false,
+      "_button": {
+        "buttonText": "",
+        "ariaLabel": "Enlarge image",
+        "iconClass": "graphic-expand-icon"
+      },
+      "_selector": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-01-05-01-01",
+    "_parentId": "b-01-05-01",
+    "_type": "component",
+    "_component": "pageNav",
+    "_classes": "",
+    "_layout": "full",
+    "title": "How to Use This Module Nav",
+    "displayTitle": "",
+    "body": "<div style='font-weight:700'>Confidential. For internal reference and/or training purposes only. Do not copy, modify, or distribute externally.</div>",
+    "instruction": "",
+    "_loopStyleComment": {
+      "allPages": "loop sequentially through all pages in course",
+      "siblings": "loop sequentially through all pages in current parent object",
+      "none": "disable previous and next buttons at start and end of the pages in the current parent object"
+    },
+    "_loopStyle": "none",
+    "_shouldSkipOptionalPages": false,
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-left'",
+        "_iconClass": "icon-controls-left",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-home'",
+        "_iconClass": "icon-home",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-right'",
+        "_iconClass": "icon-controls-right",
+        "_alignIconRight": true,
+        "text": "",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-cross'",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_id": "c-02-01-01-01",
+    "_parentId": "b-02-01-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Welcome to the <span class=\"notify g-term\" id='base_sample_module'>base sample module</span>. This module is not about a product: it exists so that every component the automation can build appears once, with real copy around it. Use it to see what a component looks like before authoring your own storyboard.</p>",
+    "instruction": "",
+    "_notifyAnywhere": [
+      {
+        "id": "base_sample_module",
+        "title": "base sample module",
+        "body": "the course in base/Source: one sample of every component the automation can build"
+      }
+    ],
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-02-02-01-01",
+    "_parentId": "b-02-02-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>This module is arranged as a course, not as a catalogue:</p><ul><li>Chapter 1 covers the content components: copy, lists, tables, figures and callouts.</li><li>Chapter 2 covers the interactivities: accordions, tabs, hot spots, carousels, popups and sliders.</li><li>Each chapter ends with Key Concepts and a set of Check Your Progress questions, as a real module does.</li></ul>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-02-03-01-01",
+    "_parentId": "b-02-03-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Upon completion of this module, learners will be able to:</p><ul><li>Recognise every component the automation builds.</li><li>Author a storyboard that asks for each of them.</li><li>Tell the conventions that carry meaning from those that do not.</li></ul>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-02-04-01-01",
+    "_parentId": "b-02-04-01",
+    "_type": "component",
+    "_component": "pageNav",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Introduction Nav",
+    "displayTitle": "",
+    "body": "<div style='font-weight:700'>Confidential. For internal reference and/or training purposes only. Do not copy, modify, or distribute externally.</div>",
+    "instruction": "",
+    "_loopStyleComment": {
+      "allPages": "loop sequentially through all pages in course",
+      "siblings": "loop sequentially through all pages in current parent object",
+      "none": "disable previous and next buttons at start and end of the pages in the current parent object"
+    },
+    "_loopStyle": "none",
+    "_shouldSkipOptionalPages": false,
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-left'",
+        "_iconClass": "icon-controls-left",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-home'",
+        "_iconClass": "icon-home",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-right'",
+        "_iconClass": "icon-controls-right",
+        "_alignIconRight": true,
+        "text": "",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-cross'",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_id": "c-03-01-01-01",
+    "_parentId": "b-03-01-01",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Accordion",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_shouldCollapseItems": true,
+    "_shouldExpandFirstItem": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_isCenterAligned": false,
+    "_items": [
+      {
+        "title": "Learning Objectives",
+        "body": "<p>Upon completion of this chapter, learners will be able to:</p><ul><li>Identify how body copy, lists and tables are authored.</li><li>Describe how a figure and its caption travel together.</li><li>Recognise the three callout types.</li></ul>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-03-02-01-01",
+    "_parentId": "b-03-02-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>A paragraph becomes a text component. A <span class=\"notify g-term\" id='glossary_term'>glossary term</span> becomes a popup whose definition comes from the Glossary table, and a citation is removed before the learner sees it. Trademarks such as Adapt</p><ul><li>A first-level bullet.<ul><li>A second-level bullet, nested inside it.</li></ul></li></ul><p>A numbered list reads as an ordered list:</p><ol><li>The first step.</li><li>The second step.</li></ol>",
+    "instruction": "",
+    "_notifyAnywhere": [
+      {
+        "id": "glossary_term",
+        "title": "glossary term",
+        "body": "a word marked in the storyboard with the Glossary item character style, shown to the learner as a popup"
+      }
+    ],
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-02-02-01",
+    "_parentId": "b-03-02-02",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>A small picture inside a list item becomes that item's bullet:</p><ul class='custom-img-bullet'><li><img class='bullet-img' src='assets/images/001-section-1-1-body-copy-lists-image.png' alt=''> <div>Each item carries its own icon.</div></li><li><img class='bullet-img' src='assets/images/001-section-1-1-body-copy-lists-image.png' alt=''> <div>The icon is any picture no wider than 200 pixels.</div></li><li><img class='bullet-img' src='assets/images/001-section-1-1-body-copy-lists-image.png' alt=''> <div>Larger pictures are placed after the list instead.</div></li></ul>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-02-03-01",
+    "_parentId": "b-03-02-03",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "flip",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>The caption below names the table, so it heads it.</p><p style='text-align: center;'><strong>Table 1-1: A Data Table</strong></p><table class='column-width-fix'><thead><tr><th><strong>Parameter</strong></th><th><strong>Group A</strong></th><th><strong>Group B</strong></th></tr></thead><tbody><tr><td>Mean at baseline</td><td>4.28 (0.16)</td><td>4.57 (0.23)</td></tr><tr><td>Mean at week 52</td><td>5.75 (0.15)</td><td>3.95 (0.14)</td></tr></tbody></table>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-03-01-01",
+    "_parentId": "b-03-03-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>A picture becomes a graphic component, and the caption under it becomes the figure's attribution. The learner can enlarge it.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-03-01-02",
+    "_parentId": "b-03-03-01",
+    "_type": "component",
+    "_component": "graphic",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Figure 1-1: A Sample Figure",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_hint": {
+      "_isEnabled": true,
+      "title": "ZOOM IN",
+      "altTitle": "",
+      "body": "<p>A callout attaches to the component above it - here, to the figure. ZOOM IN, QUICK FACT! and FAST FORWARD / FLASH BACK each pick their own icon.</p>",
+      "_imageAlignment": "right",
+      "_graphic": {
+        "_src": "",
+        "alt": "",
+        "attribution": ""
+      },
+      "_button": {
+        "_iconClass": "icon-hint-zoom-in",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "ZOOM IN"
+      }
+    },
+    "_graphic": {
+      "alt": "Figure 1-1: A Sample Figure",
+      "large": "assets/images/004-fig-1-1-a-sample-figure.jpg",
+      "small": "assets/images/004-fig-1-1-a-sample-figure.jpg",
+      "attribution": "<span class='img-footnote no-image-title-text'>Figure 1-1: A Sample Figure</span>"
+    },
+    "_graphicExpand": {
+      "_isEnabled": true,
+      "_button": {
+        "buttonText": "",
+        "ariaLabel": "Enlarge image",
+        "iconClass": "graphic-expand-icon"
+      },
+      "_selector": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-03-02-01",
+    "_parentId": "b-03-03-02",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Where a second callout follows with no copy between, it is given a component of its own to sit on.</p>",
+    "instruction": "",
+    "_hint": {
+      "_isEnabled": true,
+      "title": "QUICK FACT!",
+      "altTitle": "",
+      "body": "<p>A quick fact points out something relevant to the copy beside it.</p>",
+      "_imageAlignment": "right",
+      "_graphic": {
+        "_src": "",
+        "alt": "",
+        "attribution": ""
+      },
+      "_button": {
+        "_iconClass": "icon-hint-quick-fact",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "QUICK FACT!"
+      }
+    },
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-03-02-02",
+    "_parentId": "b-03-03-02",
+    "_type": "component",
+    "_component": "blank",
+    "_classes": "callout-host",
+    "_layout": "full",
+    "_isOptional": true,
+    "_hint": {
+      "_isEnabled": true,
+      "title": "FAST FORWARD / FLASH BACK",
+      "altTitle": "",
+      "body": "<p>This callout points backwards or forwards to another section.</p>",
+      "_imageAlignment": "right",
+      "_graphic": {
+        "_src": "",
+        "alt": "",
+        "attribution": ""
+      },
+      "_button": {
+        "_iconClass": "icon-hint-flash-back",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "FAST FORWARD / FLASH BACK"
+      }
+    }
+  },
+  {
+    "_id": "c-03-04-01-01",
+    "_parentId": "b-03-04-01",
+    "_type": "component",
+    "_component": "graphic",
+    "_classes": "",
+    "_layout": "left",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "assets/images/005-section-1-3-side-by-side-image.png",
+      "small": "assets/images/005-section-1-3-side-by-side-image.png",
+      "attribution": ""
+    },
+    "_graphicExpand": {
+      "_isEnabled": true,
+      "_button": {
+        "buttonText": "",
+        "ariaLabel": "Enlarge image",
+        "iconClass": "graphic-expand-icon"
+      },
+      "_selector": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-04-01-02",
+    "_parentId": "b-03-04-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "right",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>A programming note that asks for a side-by-side layout is carried out: the picture and this paragraph share the row, the picture on the left because it comes first.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-03-05-01-01",
+    "_parentId": "b-03-05-01",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Accordion",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_shouldCollapseItems": true,
+    "_shouldExpandFirstItem": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_isCenterAligned": false,
+    "_items": [
+      {
+        "title": "Content Components",
+        "body": "<ul><li>Body copy, bullets and numbered lists</li><li>Tables, figures and captions</li></ul>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "Callouts",
+        "body": "<ul><li>ZOOM IN, QUICK FACT!, FAST FORWARD / FLASH BACK</li><li>A second callout gets its own component</li></ul>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-03-06-01-01",
+    "_parentId": "b-03-06-01",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "margin-bottom_1 hide-reset-btn",
+    "_layout": "full",
+    "title": "Question 1",
+    "displayTitle": "",
+    "body": "Which component does a plain paragraph become?",
+    "instruction": "Choose one option then select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": false,
+    "_canShowCorrectness": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_selectable": 1,
+    "_items": [
+      {
+        "text": "A text component",
+        "altText": "",
+        "_shouldBeSelected": true,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "A graphic component",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "An accordion",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "A callout",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      }
+    ]
+  },
+  {
+    "_id": "c-03-06-02-01",
+    "_parentId": "b-03-06-02",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "margin-bottom_1 hide-reset-btn",
+    "_layout": "full",
+    "title": "Question 2",
+    "displayTitle": "",
+    "body": "Which of the following travel with the figure above them? Select all that apply.",
+    "instruction": "Choose all that apply then select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": false,
+    "_canShowCorrectness": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_selectable": 3,
+    "_items": [
+      {
+        "text": "Its caption",
+        "altText": "",
+        "_shouldBeSelected": true,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "A callout that follows it",
+        "altText": "",
+        "_shouldBeSelected": true,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "The page title",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "Its enlarge button",
+        "altText": "",
+        "_shouldBeSelected": true,
+        "_isPartlyCorrect": false
+      }
+    ]
+  },
+  {
+    "_id": "c-03-06-03-01",
+    "_parentId": "b-03-06-03",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "margin-bottom_1 hide-reset-btn",
+    "_layout": "full",
+    "title": "Question 3",
+    "displayTitle": "",
+    "body": "True or false? Key Concepts is built as an accordion.",
+    "instruction": "Choose one option then select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": false,
+    "_canShowCorrectness": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_selectable": 1,
+    "_items": [
+      {
+        "text": "True",
+        "altText": "",
+        "_shouldBeSelected": true,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "False",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      }
+    ]
+  },
+  {
+    "_id": "c-03-06-04-01",
+    "_parentId": "b-03-06-04",
+    "_type": "component",
+    "_component": "matching",
+    "_classes": "margin-bottom_1",
+    "_layout": "full",
+    "title": "Question 4",
+    "displayTitle": "",
+    "body": "Match each Word style with what it becomes.",
+    "instruction": "Choose an option from each dropdown list and select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": true,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": true,
+    "_canShowCorrectness": false,
+    "_canShowFeedback": true,
+    "_canShowMarking": false,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please select reset and try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please select reset and try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_shouldResetAllAnswers": false,
+    "_isRandomQuestionOrder": false,
+    "placeholder": "Please select an option",
+    "_allowOnlyUniqueAnswers": true,
+    "_items": [
+      {
+        "text": "A block",
+        "_options": [
+          {
+            "text": "Heading 1",
+            "_isCorrect": false,
+            "_score": 0
+          },
+          {
+            "text": "Heading 2",
+            "_isCorrect": false,
+            "_score": 0
+          },
+          {
+            "text": "Heading 3",
+            "_isCorrect": true,
+            "_score": 1
+          }
+        ]
+      },
+      {
+        "text": "A page",
+        "_options": [
+          {
+            "text": "Heading 1",
+            "_isCorrect": true,
+            "_score": 1
+          },
+          {
+            "text": "Heading 2",
+            "_isCorrect": false,
+            "_score": 0
+          },
+          {
+            "text": "Heading 3",
+            "_isCorrect": false,
+            "_score": 0
+          }
+        ]
+      },
+      {
+        "text": "An article",
+        "_options": [
+          {
+            "text": "Heading 1",
+            "_isCorrect": false,
+            "_score": 0
+          },
+          {
+            "text": "Heading 2",
+            "_isCorrect": true,
+            "_score": 1
+          },
+          {
+            "text": "Heading 3",
+            "_isCorrect": false,
+            "_score": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "c-03-06-05-01",
+    "_parentId": "b-03-06-05",
+    "_type": "component",
+    "_component": "assessmentResults",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Results",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_assessmentId": "Assessment 1",
+    "_isVisibleBeforeCompletion": true,
+    "_comment": "setCompletionOn = inview | pass",
+    "_setCompletionOn": "inview",
+    "_isOptional": true,
+    "_resetType": "inherit",
+    "_retry": {
+      "button": "Retry",
+      "feedback": "",
+      "_routeToAssessment": true
+    },
+    "_completionBody": "You got {{{score}}} out of {{{maxScore}}} correct. {{{feedback}}}",
+    "_bands": [
+      {
+        "_score": 0,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 25,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 50,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 80,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 100,
+        "feedback": "Congratulations!",
+        "_allowRetry": false,
+        "_classes": "high-score"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-03-07-01-01",
+    "_parentId": "b-03-07-01",
+    "_type": "component",
+    "_component": "pageNav",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Chapter 1 Nav",
+    "displayTitle": "",
+    "body": "<div style='font-weight:700'>Be sure that all callouts and interactivities are completed before moving forward.<br>Select the progress bar at the top right of the screen for any missed interactions.<p></p></div><div style='font-weight:700'>Confidential. For internal reference and/or training purposes only. Do not copy, modify, or distribute externally.</div>",
+    "instruction": "",
+    "_loopStyleComment": {
+      "allPages": "loop sequentially through all pages in course",
+      "siblings": "loop sequentially through all pages in current parent object",
+      "none": "disable previous and next buttons at start and end of the pages in the current parent object"
+    },
+    "_loopStyle": "none",
+    "_shouldSkipOptionalPages": false,
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-left'",
+        "_iconClass": "icon-controls-left",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-home'",
+        "_iconClass": "icon-home",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-right'",
+        "_iconClass": "icon-controls-right",
+        "_alignIconRight": true,
+        "text": "",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-cross'",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_id": "c-04-01-01-01",
+    "_parentId": "b-04-01-01",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Accordion",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_shouldCollapseItems": true,
+    "_shouldExpandFirstItem": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_isCenterAligned": false,
+    "_items": [
+      {
+        "title": "Learning Objectives",
+        "body": "<p>Upon completion of this chapter, learners will be able to:</p><ul><li>Ask for each interactivity by name.</li><li>Describe what a learner does with each one.</li></ul>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-02-01-01",
+    "_parentId": "b-04-02-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Select each panel below to open it.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-04-02-01-02",
+    "_parentId": "b-04-02-01",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Accordion",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_shouldCollapseItems": true,
+    "_shouldExpandFirstItem": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_isCenterAligned": false,
+    "_items": [
+      {
+        "title": "One Panel at a Time",
+        "body": "<p>An accordion opens one panel at a time and suits a list of topics that are read in any order.</p>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "A Panel With a Figure",
+        "body": "<p>A figure inside a panel stays where the author put it, above its caption.</p><p><img src='assets/images/004-fig-1-1-a-sample-figure.jpg' alt='Figure 2-1: A Figure Inside an Accordion Panel'></p><p>Figure 2-1: A Figure Inside an Accordion Panel</p>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "A Panel With Bullets",
+        "body": "<ul><li>Panels carry bullets as well as paragraphs.</li><li>Each panel is one item of the component.</li></ul>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-02-01-03",
+    "_parentId": "b-04-02-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Tabs suit a small number of parallel topics.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-04-02-01-04",
+    "_parentId": "b-04-02-01",
+    "_type": "component",
+    "_component": "tabs",
+    "_classes": "image-padding-removed",
+    "_layout": "full",
+    "title": "Horizontal Tabs",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_tabLayout": "horizontal",
+    "_minHeight": "",
+    "_comment": "Only set min height if you want to uniform the content container size across tab items. By default, the container will display at the height of each item's content",
+    "_items": [
+      {
+        "tabTitle": "Horizontal",
+        "title": "",
+        "body": "<p>Horizontal tabs sit in a row above their copy.</p>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "When to Use Them",
+        "title": "",
+        "body": "<p>Use them where the titles are short and the panels are of similar length.</p>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-02-01-05",
+    "_parentId": "b-04-02-01",
+    "_type": "component",
+    "_component": "tabs",
+    "_classes": "image-padding-removed",
+    "_layout": "full",
+    "title": "Vertical Tabs",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_tabLayout": "vertical",
+    "_minHeight": "",
+    "_comment": "Only set min height if you want to uniform the content container size across tab items. By default, the container will display at the height of each item's content",
+    "_items": [
+      {
+        "tabTitle": "Vertical",
+        "title": "",
+        "body": "<p>Vertical tabs stack down the left, which suits longer titles.</p>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Indication",
+        "title": "",
+        "body": "<p>A product's Indication, Administration and Safety are often authored this way.</p>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Safety",
+        "title": "",
+        "body": "<p>Each tab holds one topic, so the learner can compare them.</p>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-03-01-01",
+    "_parentId": "b-04-03-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>Select each pin on the image to learn more.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-04-03-01-02",
+    "_parentId": "b-04-03-01",
+    "_type": "component",
+    "_component": "hotgraphic",
+    "_classes": "hotgraphic-vertical",
+    "_layout": "full",
+    "title": "Hotspot Images",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "mobileBody": "",
+    "mobileInstruction": "Select the plus icon followed by the next arrow to find out more.",
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_canCycleThroughPagination": false,
+    "_hidePagination": false,
+    "_isNarrativeOnMobile": true,
+    "_useNumberedPins": true,
+    "_useGraphicsAsPins": false,
+    "_isRound": false,
+    "_graphic": {
+      "src": "assets/images/007-fig-2-2-a-hot-spot-image.jpg",
+      "alt": "Figure 2-2: A Hot Spot Image",
+      "attribution": "<span class='img-footnote no-image-title-text'>Figure 2-2: A Hot Spot Image</span>"
+    },
+    "_items": [
+      {
+        "_top": 18.0,
+        "_left": 12.0,
+        "title": "A Pin on the Image",
+        "body": "<p>Each pin opens its own popup over the picture.</p>",
+        "strapline": "A Pin on the Image",
+        "_imageAlignment": "",
+        "_comment": "Supported classes = 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+        "_classes": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": "",
+          "_classes": ""
+        },
+        "_tooltip": {
+          "_isEnabled": false,
+          "text": "{{ariaLabel}}"
+        },
+        "_pin": {
+          "src": "",
+          "alt": ""
+        }
+      },
+      {
+        "_top": 44.0,
+        "_left": 45.0,
+        "title": "Positioning",
+        "body": "<p>Pin positions cannot be expressed in a storyboard: they are set in base/Source and read back from there on every build.</p>",
+        "strapline": "Positioning",
+        "_imageAlignment": "",
+        "_comment": "Supported classes = 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+        "_classes": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": "",
+          "_classes": ""
+        },
+        "_tooltip": {
+          "_isEnabled": false,
+          "text": "{{ariaLabel}}"
+        },
+        "_pin": {
+          "src": "",
+          "alt": ""
+        }
+      },
+      {
+        "_top": 70.0,
+        "_left": 78.0,
+        "title": "A Third Pin",
+        "body": "<p>Three pins are enough to show how the component behaves.</p>",
+        "strapline": "A Third Pin",
+        "_imageAlignment": "",
+        "_comment": "Supported classes = 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+        "_classes": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": "",
+          "_classes": ""
+        },
+        "_tooltip": {
+          "_isEnabled": false,
+          "text": "{{ariaLabel}}"
+        },
+        "_pin": {
+          "src": "",
+          "alt": ""
+        }
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_graphicExpand": {
+      "_isEnabled": true,
+      "_button": {
+        "buttonText": "",
+        "ariaLabel": "Enlarge image",
+        "iconClass": "graphic-expand-icon"
+      },
+      "_selector": ""
+    }
+  },
+  {
+    "_id": "c-04-03-01-03",
+    "_parentId": "b-04-03-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>A carousel steps through its panels in order.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-04-03-01-04",
+    "_parentId": "b-04-03-01",
+    "_type": "component",
+    "_component": "narrative",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Narrative",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "Select the next and back arrows to find out more.",
+    "mobileInstruction": "Select the plus icon followed by the next arrow to find out more.",
+    "_hasNavigationInTextArea": false,
+    "_setCompletionOn": "allItems",
+    "_isTextBelowImage": false,
+    "_isMobileTextBelowImage": false,
+    "_items": [
+      {
+        "title": "First",
+        "body": "<p>A carousel panel pairs a picture with its copy.</p>",
+        "strapline": "First",
+        "_graphic": {
+          "src": "assets/images/004-fig-1-1-a-sample-figure.jpg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Second",
+        "body": "<p>The learner moves through the panels with the arrows.</p>",
+        "strapline": "Second",
+        "_graphic": {
+          "src": "assets/images/007-fig-2-2-a-hot-spot-image.jpg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Third",
+        "body": "<p>Use it where the order matters - a sequence or a timeline.</p>",
+        "strapline": "Third",
+        "_graphic": {
+          "src": "assets/images/005-section-1-3-side-by-side-image.png",
+          "alt": "",
+          "attribution": ""
+        }
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-03-01-05",
+    "_parentId": "b-04-03-01",
+    "_type": "component",
+    "_component": "textwithpopup",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Text With Popups",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_popups": [
+      {
+        "_id": "popup-1",
+        "title": "first popup",
+        "body": "<p>A popup explains a phrase without interrupting the copy.</p>",
+        "linkText": "first popup"
+      },
+      {
+        "_id": "popup-2",
+        "title": "second popup",
+        "body": "<p>Each panel becomes one popup, opened from its own link.</p>",
+        "linkText": "second popup"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-04-01-01",
+    "_parentId": "b-04-04-01",
+    "_type": "component",
+    "_component": "graphicSlider",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Graphic Slider",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_graphicSlider": {
+      "alt": "",
+      "longdescription": "",
+      "large": "",
+      "small": "",
+      "attribution": ""
+    },
+    "_items": [
+      {
+        "_graphic": {
+          "alt": "",
+          "large": "assets/images/004-fig-1-1-a-sample-figure.jpg",
+          "small": "assets/images/004-fig-1-1-a-sample-figure.jpg"
+        },
+        "text": "Stop 1: Before"
+      },
+      {
+        "_graphic": {
+          "alt": "",
+          "large": "assets/images/007-fig-2-2-a-hot-spot-image.jpg",
+          "small": "assets/images/007-fig-2-2-a-hot-spot-image.jpg"
+        },
+        "text": "Stop 2: After"
+      }
+    ],
+    "_scaleStart": 1,
+    "_scaleEnd": 2,
+    "_scaleStep": 1,
+    "_showScale": true,
+    "_showScaleNumbers": true,
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-04-01-02",
+    "_parentId": "b-04-04-01",
+    "_type": "component",
+    "_component": "blank",
+    "_classes": "",
+    "_layout": "full",
+    "_isOptional": true
+  },
+  {
+    "_id": "c-04-04-01-03",
+    "_parentId": "b-04-04-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>A table asked for by name becomes a component of its own:</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-04-04-01-04",
+    "_parentId": "b-04-04-01",
+    "_type": "component",
+    "_component": "table",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Table",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_rowHeaderIndexes": "",
+    "_colHeaderIndexes": "0",
+    "_minWidth": 800,
+    "_rows": [
+      {
+        "_classes": "",
+        "_cells": [
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "<strong>Component</strong>",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          },
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "<strong>What the learner does</strong>",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          }
+        ]
+      },
+      {
+        "_classes": "",
+        "_cells": [
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "Accordion",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          },
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "Opens one panel at a time",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          }
+        ]
+      },
+      {
+        "_classes": "",
+        "_cells": [
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "Tabs",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          },
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "Compares parallel topics",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          }
+        ]
+      },
+      {
+        "_classes": "",
+        "_cells": [
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "Hot spots",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          },
+          {
+            "_colSpan": "1",
+            "_rowSpan": "1",
+            "text": "Explores a picture",
+            "_classes": "",
+            "_isHeading": false,
+            "_graphic": {
+              "_src": "",
+              "alt": "",
+              "attribution": ""
+            }
+          }
+        ]
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-05-01-01",
+    "_parentId": "b-04-05-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>A narration table outside a Key Concepts page becomes a video component, wired to the file the video must be delivered under.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-04-05-01-02",
+    "_parentId": "b-04-05-01",
+    "_type": "component",
+    "_component": "media",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Section 2.4",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_setCompletionOn": "ended",
+    "_useClosedCaptions": true,
+    "_allowFullScreen": true,
+    "_pauseWhenOffScreen": false,
+    "_playsinline": false,
+    "_preventForwardScrubbing": false,
+    "_startLanguage": "en",
+    "_showVolumeControl": true,
+    "_startVolume": "80%",
+    "_aspectRatio": "landscape",
+    "_offsetMediaControls": false,
+    "_media": {
+      "mp4": "assets/videos/sample.mp4",
+      "ogv": "assets/videos/sample.mp4",
+      "poster": "assets/videos/poster.png",
+      "cc": [
+        {
+          "srclang": "en",
+          "src": "assets/videos/vtt/sample.vtt"
+        }
+      ]
+    },
+    "_transcript": {
+      "_setCompletionOnView": false,
+      "_inlineTranscript": false,
+      "_externalTranscript": false,
+      "inlineTranscriptButton": "Transcript",
+      "inlineTranscriptCloseButton": "Close Transcript",
+      "inlineTranscriptBody": "This is the voiceover script for the video.",
+      "transcriptLinkButton": "",
+      "transcriptLink": ""
+    },
+    "_playerOptions": {
+      "poster": "",
+      "showPosterWhenEnded": true,
+      "defaultVideoWidth": 480,
+      "defaultVideoHeight": 270,
+      "videoWidth": -1,
+      "videoHeight": -1,
+      "defaultAudioWidth": 400,
+      "defaultAudioHeight": 30,
+      "defaultSeekBackwardInterval": "(media.duration * 0.05)",
+      "defaultSeekForwardInterval": "(media.duration * 0.05)",
+      "audioWidth": -1,
+      "audioHeight": -1,
+      "startVolume": 0.8,
+      "loop": false,
+      "autoRewind": true,
+      "enableAutosize": true,
+      "alwaysShowHours": false,
+      "showTimecodeFrameCount": false,
+      "framesPerSecond": 25,
+      "autosizeProgress": true,
+      "alwaysShowControls": false,
+      "hideVideoControlsOnLoad": false,
+      "clickToPlayPause": true,
+      "iPadUseNativeControls": false,
+      "iPhoneUseNativeControls": false,
+      "AndroidUseNativeControls": false,
+      "features": [
+        "playpause",
+        "current",
+        "progress",
+        "duration",
+        "tracks",
+        "volume",
+        "fullscreen"
+      ],
+      "isVideo": true,
+      "enableKeyboard": true,
+      "pauseOtherPlayers": true,
+      "tracksText": "mejs.i18n.t('Captions/Subtitles')",
+      "hideCaptionsButtonWhenEmpty": true,
+      "toggleCaptionsButtonWhenOnlyOne": false,
+      "slidesSelector": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-06-01-01",
+    "_parentId": "b-04-06-01",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Accordion",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_shouldCollapseItems": true,
+    "_shouldExpandFirstItem": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_isCenterAligned": false,
+    "_items": [
+      {
+        "title": "Choosing an Interactivity",
+        "body": "<ul><li>Accordion: topics read in any order</li><li>Tabs: parallel topics</li><li>Hot spots: exploring a picture</li></ul>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "The Rest of the Set",
+        "body": "<ul><li>Carousel: a sequence</li><li>Popups: detail without interrupting</li><li>Sliders: before and after</li></ul>",
+        "_titleIcon": "",
+        "_imageAlignment": "",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-07-01-01",
+    "_parentId": "b-04-07-01",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "margin-bottom_1 hide-reset-btn",
+    "_layout": "full",
+    "title": "Question 1",
+    "displayTitle": "",
+    "body": "Which interactivity suits a picture the learner explores?",
+    "instruction": "Choose one option then select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": false,
+    "_canShowCorrectness": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_selectable": 1,
+    "_items": [
+      {
+        "text": "Tabs",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "Hot spots",
+        "altText": "",
+        "_shouldBeSelected": true,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "A carousel",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      },
+      {
+        "text": "A slider",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false
+      }
+    ]
+  },
+  {
+    "_id": "c-04-07-02-01",
+    "_parentId": "b-04-07-02",
+    "_type": "component",
+    "_component": "selectchoice",
+    "_classes": "margin-bottom_1",
+    "_layout": "full",
+    "title": "Question 2",
+    "displayTitle": "",
+    "body": "Mark whether each component is a question or not.",
+    "instruction": "Select <strong>Question</strong> or <strong>Not a question</strong> for each row.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": true,
+    "_canShowCorrectness": false,
+    "_canShowFeedback": true,
+    "_canShowMarking": false,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_shouldResetAllAnswers": false,
+    "_choices": [
+      {
+        "text": "<strong>Question</strong>",
+        "_graphic": {
+          "alt": "",
+          "large": "",
+          "small": ""
+        }
+      },
+      {
+        "text": "<strong>Not a question</strong>",
+        "_graphic": {
+          "alt": "",
+          "large": "",
+          "small": ""
+        }
+      }
+    ],
+    "_items": [
+      {
+        "text": "Text input",
+        "_graphic": {
+          "alt": "",
+          "large": "",
+          "small": ""
+        },
+        "_shouldBeSelected": 1
+      },
+      {
+        "text": "Accordion",
+        "_graphic": {
+          "alt": "",
+          "large": "",
+          "small": ""
+        },
+        "_shouldBeSelected": 2
+      },
+      {
+        "text": "Graphic MCQ",
+        "_graphic": {
+          "alt": "",
+          "large": "",
+          "small": ""
+        },
+        "_shouldBeSelected": 1
+      }
+    ]
+  },
+  {
+    "_id": "c-04-07-03-01",
+    "_parentId": "b-04-07-03",
+    "_type": "component",
+    "_component": "assessmentResults",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Results",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_assessmentId": "Assessment 2",
+    "_isVisibleBeforeCompletion": true,
+    "_comment": "setCompletionOn = inview | pass",
+    "_setCompletionOn": "inview",
+    "_isOptional": true,
+    "_resetType": "inherit",
+    "_retry": {
+      "button": "Retry",
+      "feedback": "",
+      "_routeToAssessment": true
+    },
+    "_completionBody": "You got {{{score}}} out of {{{maxScore}}} correct. {{{feedback}}}",
+    "_bands": [
+      {
+        "_score": 0,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 25,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 50,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 80,
+        "feedbackNotFinal": "Retry Check Your Progress questions?",
+        "feedback": "",
+        "_allowRetry": true
+      },
+      {
+        "_score": 100,
+        "feedback": "Congratulations!",
+        "_allowRetry": false,
+        "_classes": "high-score"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-04-08-01-01",
+    "_parentId": "b-04-08-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "<p>These three are authored as interactivities rather than as Check Your Progress questions, so they can sit anywhere in a chapter.</p>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-04-08-01-02",
+    "_parentId": "b-04-08-01",
+    "_type": "component",
+    "_component": "gmcq",
+    "_classes": "margin-bottom_1 hide-reset-btn",
+    "_layout": "full",
+    "title": "Graphic Mcq",
+    "displayTitle": "",
+    "body": "<p>Which picture is the sample figure used above?</p>",
+    "instruction": "Choose one option then select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": false,
+    "_canShowCorrectness": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_selectable": 1,
+    "_items": [
+      {
+        "text": "The dark picture.",
+        "altText": "",
+        "_shouldBeSelected": false,
+        "_isPartlyCorrect": false,
+        "_graphic": {
+          "alt": "The dark picture.",
+          "attribution": "",
+          "large": "assets/images/007-fig-2-2-a-hot-spot-image.jpg",
+          "small": "assets/images/007-fig-2-2-a-hot-spot-image.jpg"
+        }
+      },
+      {
+        "text": "The bright picture.",
+        "altText": "",
+        "_shouldBeSelected": true,
+        "_isPartlyCorrect": false,
+        "_graphic": {
+          "alt": "The bright picture.",
+          "attribution": "",
+          "large": "assets/images/004-fig-1-1-a-sample-figure.jpg",
+          "small": "assets/images/004-fig-1-1-a-sample-figure.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "c-04-08-01-03",
+    "_parentId": "b-04-08-01",
+    "_type": "component",
+    "_component": "slider",
+    "_classes": "margin-bottom_1",
+    "_layout": "full",
+    "title": "Slider",
+    "displayTitle": "",
+    "body": "<p>How many components does this module show?</p>",
+    "instruction": "Drag the slider to make your choice and select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": true,
+    "_canShowCorrectness": false,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "ariaScaleName": "",
+    "labelStart": "a few",
+    "labelEnd": "all of them",
+    "_scaleStart": 1,
+    "_scaleEnd": 20,
+    "_scaleStep": 1,
+    "scaleStepPrefix": "",
+    "scaleStepSuffix": "",
+    "_showNumber": true,
+    "_showScaleIndicator": true,
+    "_showScale": true,
+    "_showScaleNumbers": true,
+    "_correctAnswer": 18,
+    "_correctRange": {
+      "_bottom": "",
+      "_top": ""
+    }
+  },
+  {
+    "_id": "c-04-08-01-04",
+    "_parentId": "b-04-08-01",
+    "_type": "component",
+    "_component": "textinput",
+    "_classes": "margin-bottom_1",
+    "_layout": "full",
+    "title": "Text Input",
+    "displayTitle": "",
+    "body": "<p>Which Word style becomes a page?</p>",
+    "instruction": "Input your answer and select Submit.",
+    "ariaQuestion": "",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_hasItemScoring": false,
+    "_canShowModelAnswer": true,
+    "_canShowCorrectness": false,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_feedback": {
+      "title": "Feedback",
+      "altTitle": "Alt feedback title text",
+      "correct": "<h3 style='margin-bottom: 6px;'>Correct!</h3>You have selected the correct response.",
+      "_incorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      },
+      "_partlyCorrect": {
+        "notFinal": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please try again.",
+        "final": "<h3 style='margin-bottom: 6px;'>Incorrect</h3>Please review the correct answer before moving on."
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_items": [
+      {
+        "_answers": [
+          "Heading 1",
+          "H1"
+        ],
+        "prefix": "",
+        "suffix": "",
+        "placeholder": "Enter answer here"
+      }
+    ]
+  },
+  {
+    "_id": "c-04-09-01-01",
+    "_parentId": "b-04-09-01",
+    "_type": "component",
+    "_component": "pageNav",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Chapter 2 Nav",
+    "displayTitle": "",
+    "body": "<div style='font-weight:700'>Be sure that all callouts and interactivities are completed before moving forward.<br>Select the progress bar at the top right of the screen for any missed interactions.<p></p></div><div style='font-weight:700'>Confidential. For internal reference and/or training purposes only. Do not copy, modify, or distribute externally.</div>",
+    "instruction": "",
+    "_loopStyleComment": {
+      "allPages": "loop sequentially through all pages in course",
+      "siblings": "loop sequentially through all pages in current parent object",
+      "none": "disable previous and next buttons at start and end of the pages in the current parent object"
+    },
+    "_loopStyle": "none",
+    "_shouldSkipOptionalPages": false,
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-left'",
+        "_iconClass": "icon-controls-left",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-home'",
+        "_iconClass": "icon-home",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-right'",
+        "_iconClass": "icon-controls-right",
+        "_alignIconRight": true,
+        "text": "",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-cross'",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_id": "c-05-01-01-01",
+    "_parentId": "b-05-01-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "glossary vertical-table-data-highlight",
+    "_layout": "full",
+    "title": "Glossary",
+    "displayTitle": "",
+    "body": "<table><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody><tr><td><strong>base sample module</strong></td><td>the course in base/Source: one sample of every component the automation can build</td></tr><tr><td><strong>glossary term</strong></td><td>a word marked in the storyboard with the Glossary item character style, shown to the learner as a popup</td></tr><tr><td><strong>highlighted in boldface type</strong></td><td>the way a glossary term appears in the copy</td></tr></tbody></table>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-05-02-01-01",
+    "_parentId": "b-05-02-01",
+    "_type": "component",
+    "_component": "pageNav",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Glossary Nav",
+    "displayTitle": "",
+    "body": "<div style='font-weight:700'>Confidential. For internal reference and/or training purposes only. Do not copy, modify, or distribute externally.</div>",
+    "instruction": "",
+    "_loopStyleComment": {
+      "allPages": "loop sequentially through all pages in course",
+      "siblings": "loop sequentially through all pages in current parent object",
+      "none": "disable previous and next buttons at start and end of the pages in the current parent object"
+    },
+    "_loopStyle": "none",
+    "_shouldSkipOptionalPages": false,
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-left'",
+        "_iconClass": "icon-controls-left",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-home'",
+        "_iconClass": "icon-home",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-right'",
+        "_iconClass": "icon-controls-right",
+        "_alignIconRight": true,
+        "text": "",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-cross'",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_id": "c-06-01-01-01",
+    "_parentId": "b-06-01-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "References",
+    "displayTitle": "",
+    "body": "<ol><li>Adapt Learning. Adapt framework documentation. Accessed 2026. https://www.adaptlearning.org/</li><li>Base Source. The sample storyboard that builds the base course. 2026.</li></ol>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-06-02-01-01",
+    "_parentId": "b-06-02-01",
+    "_type": "component",
+    "_component": "pageNav",
+    "_classes": "",
+    "_layout": "full",
+    "title": "References Nav",
+    "displayTitle": "",
+    "body": "<div style='font-weight:700'>Confidential. For internal reference and/or training purposes only. Do not copy, modify, or distribute externally.</div>",
+    "instruction": "",
+    "_loopStyleComment": {
+      "allPages": "loop sequentially through all pages in course",
+      "siblings": "loop sequentially through all pages in current parent object",
+      "none": "disable previous and next buttons at start and end of the pages in the current parent object"
+    },
+    "_loopStyle": "none",
+    "_shouldSkipOptionalPages": false,
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-left'",
+        "_iconClass": "icon-controls-left",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-home'",
+        "_iconClass": "icon-home",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-controls-right'",
+        "_iconClass": "icon-controls-right",
+        "_alignIconRight": true,
+        "text": "",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClassComment": "Suggested icon = 'icon-cross'",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_id": "c-07-01-01-01",
+    "_parentId": "b-07-01-01",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Congratulations",
+    "displayTitle": "",
+    "body": "<h4 class=\"mb-0\">You've completed the <strong><span class=\"title-color\"><i>Base Sample Module</i></span></strong>. You may exit the course by clicking the &ldquo;X&rdquo; in the upper right of the browser window in which you viewed the course. Thank you.</h4>",
+    "instruction": "",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_search": {
+      "_isEnabled": true,
+      "keywords": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  }
+]

@@ -1,0 +1,176 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "required": false,
+  "globals": {
+    "openButtonText": {
+      "type": "string",
+      "title": "Button ARIA label",
+      "required": true,
+      "default": "Open hint",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object",
+          "properties": {
+            "_hint": {
+              "type": "object",
+              "required": false,
+              "legend": "Hint",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": false,
+                  "title": "Is enabled",
+                  "help": "Apply hint button to component.",
+                  "inputType": "Checkbox"
+                },
+                "title": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Title",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "Title displayed in the popup"
+                },
+                "altTitle": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Alternative title text",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "Text read out by screen readers if no visual title is included in the popup"
+                },
+                "body": {
+                  "type": "string",
+                  "required": true,
+                  "default": "",
+                  "title": "Body",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "Body text displayed in the popup"
+                },
+                "_imageAlignment": {
+                  "type": "string",
+                  "required": false,
+                  "default": "right",
+                  "inputType": {"type":"Select", "options":["left","top","right","bottom"]},
+                  "title": "Image alignment",
+                  "help": "Defines the alignment of the pop up image. Left: Image aligned to the left of the text area. Top: Image aligned above the text area. Right: Image aligned to the right of the text area. Bottom: Image aligned below the text area. The default alignment is `right`."
+                },
+                "_graphic": {
+                  "type": "object",
+                  "required": false,
+                  "title": "Graphic",
+                  "properties": {
+                    "_src": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "help": "Image displayed in the popup"
+                    },
+                    "alt": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "title": "Alternative text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                      "translatable": true
+                    },
+                    "attribution": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Text to be displayed as an attribution for the image",
+                      "translatable": true
+                    }
+                  }
+                },
+                "_button": {
+                  "type": "object",
+                  "required": false,
+                  "title": "Hint button",
+                  "properties": {
+                    "_iconClass": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "title": "Icon class",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Icon that displays on the button. Optional, use with/without text. CSS class name must be pre-defined."
+                    },
+                    "_alignIconRight": {
+                      "type": "boolean",
+                      "required": false,
+                      "default": true,
+                      "title": "Align icon right",
+                      "inputType": "Checkbox",
+                      "validators": [],
+                      "help": "Defines whether the icon is aligned to the left or right of the text."
+                    },
+                    "text": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Hint",
+                      "title": "Button text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true,
+                      "help": "Text that displays on the button. Optional, use with/without an icon."
+                    },
+                    "ariaLabel": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "title": "ARIA label",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true,
+                      "help": "Text read out by screen readers if no visual button text is set."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

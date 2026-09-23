@@ -1,0 +1,42 @@
+.has-attribution {
+  position: relative;
+  display: block;
+  padding-bottom: 1.6rem;
+}
+
+.component__attribution {
+  position: relative;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: @black;
+  text-align: center;
+  font-weight: bold;
+  .transform(translate3d(0,0,0));
+}
+
+.graphic__link{
+  text-decoration: none;
+}
+
+// Override position: absolute; as it won't work with current GMCQ structure
+.gmcq__attribution {
+  position: relative;
+  display: flex;
+}
+
+.notify__attribution {
+  position: relative;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: @grey;
+  text-align: center;
+  font-weight: bold;
+  .transform(translate3d(0,0,0));
+
+}

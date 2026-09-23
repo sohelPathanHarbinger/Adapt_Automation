@@ -1,0 +1,54 @@
+.hotgraphic-popup {
+  // Increase toolbar padding top so the browser outline of the
+  // item title is not hidden by toolbar
+  // --------------------------------------------------
+  &__inner {
+    // padding-top: (@icon-size + (@icon-padding * 2)) + (@item-padding / 2);
+    padding-top: 1.8rem;
+  }
+
+  &__controls,
+  &__close {
+    .notify-btn-icon;
+  }
+  // &__item{
+  //   padding: 1rem;
+  // }
+
+  &__close {
+    background-color: @btn-color-hover;
+  }
+
+  &__item-title {
+    // margin-bottom: @notify-title-margin;
+    margin-bottom: 0;
+    .notify-title;
+    color: white;
+    padding: 1rem;
+    // width: 43rem;
+    // margin: auto;
+  }
+
+  &__item-body {
+    margin-bottom: @notify-body-margin;
+    background: white;
+    padding: 1rem;
+  }
+
+  &__item-body a {
+    .link-text;
+    color: @notify-link;
+
+    .no-touch &:hover {
+      color: @notify-link-hover;
+      .transition(color @duration ease-in);
+    }
+  }
+
+  .hotgraphic.has-img-zoom &__item-image-container {
+    .img-zoom();
+  }
+  &__count{
+    color: white;
+  }
+}

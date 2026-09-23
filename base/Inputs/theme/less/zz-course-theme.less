@@ -1,0 +1,80 @@
+// <Course name> - course theme
+// ==================================================
+// TEMPLATE. Copy this file to Inputs/<course>/theme/less/zz-course-theme.less
+// and set the brand colours below from the course's Figma colour styles.
+//
+// Inputs/<course>/theme/ mirrors src/theme/<theme>/ and is copied over the
+// staged theme by the build. Grunt compiles every theme .less file as one unit
+// in path order, so this file - sorting last ("zz-") - redefines the palette
+// for the whole theme without editing base/Source.
+//
+// As shipped, every value equals the theme default in
+// base/Source/src/theme/adapt-theme-ferring/less/_defaults/, so copying the
+// file unchanged changes nothing. Delete any line you do not need to override.
+//
+// Typical Figma state language (see BBIO 1560 for a finished example):
+//   normal (button, tab, accordion, nav, sidebar, callout icon) -> brand accent
+//   hover / active / expanded / selected                        -> brand primary
+//   visited                                                      -> light tint, black text
+//   inactive / disabled                                          -> neutral grey
+
+// Brand colours (Figma colour styles)
+// --------------------------------------------------
+@brand-primary: #521a6f;              // headers, selected, hover
+@brand-accent: #e10f5e;               // buttons, nav, drawer in their normal state
+@brand-tint: #fef4f7;                 // answer options, tab panels, visited
+@brand-neutral: #e7e6e6;              // disabled / inactive
+@brand-subhead: #12d2ff;              // Heading 5 subheads, Submit / Feedback
+@brand-text: #000000;
+
+// Theme palette (less/_defaults/_colors.less)
+// --------------------------------------------------
+@primary: @brand-primary;             // page/menu header, popup header, selected
+@secondary: @brand-primary;           // Heading 4 section titles, glossary terms
+@primary_alpha: #963cbd;              // drawer items (sidebar)
+// Boxmenu items, accordion and tab headers. The theme default is a gradient;
+// set a flat colour (e.g. @brand-accent / @brand-primary) for a flat design.
+@primary_gradient: linear-gradient(90deg, #4b006e 0%, #7b2cbf 50%, #c8a2c8 100%);
+@primary_gradient_hover: linear-gradient(90deg, #e6005c 0%, #ff4d88 50%, #e6b3c2 100%);
+@primary_gradient1: linear-gradient(180deg, #b784d7 0%, #7b2cbf 45%, #5a189a 100%);
+@primary_gradient_hover1: linear-gradient(180deg, #ffb3c7 0%, #ff4d88 45%, #d9045c 100%);
+@fourth: #c6a1cf;                     // disabled
+@semiWhite: @brand-tint;              // answer options, tab panels, disabled buttons
+@sixth: @brand-tint;
+@grey: @brand-neutral;
+@redColor: @brand-accent;             // page-level progress bar
+@blockTitleColor: @brand-subhead;     // Heading 5 subheads, Submit / Feedback
+
+@visited: @grey;
+@nav-inverted: @redColor;
+@menu-item-btn-color: @redColor;
+@menu-item-btn-color-hover: @secondary;
+@btn-color: @secondary;               // "VIEW" button
+@btn-color-hover: @primary;
+@drawer: @secondary;
+
+// Typography (Figma text styles)
+// --------------------------------------------------
+@body-line-height: 1.5;
+@page-title-size: 2rem;
+@page-title-weight: @font-weight-regular;
+@menu-title-size: 2rem;
+@menu-title-weight: @font-weight-regular;
+@article-title-size: 2rem;
+@article-title-weight: @font-weight-regular;
+
+// Rules that name a colour role the palette alone cannot express
+// --------------------------------------------------
+// Uncomment and adapt as the design requires. BBIO 1560's
+// theme/less/zz-course-theme.less shows each of these in use.
+//
+// .moduleTitle { color: @brand-text; }
+// ::marker { color: @brand-primary; }                       // bullet markers
+// table th { background-color: @brand-primary !important; color: @white !important; }
+// table td { background-color: @brand-tint; }
+// .subhead { background: @brand-neutral !important; color: @brand-text !important; }
+// .tabs__nav-item-btn.is-visited,
+// .accordion-item__btn.is-visited { background: @brand-tint; color: @brand-text; }
+// .mcq-item__label { color: @brand-primary; }
+// .no-touch .btn__action:not(.is-disabled):not(.is-locked):hover { background: @brand-primary; }
+// .no-touch .drawer__item-btn:not(.is-disabled):not(.is-locked):hover { background: @brand-primary; }
