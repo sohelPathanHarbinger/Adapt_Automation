@@ -42,7 +42,6 @@ back out of it on every build (`adapt_builder/inherit.py`):
 | Value | Where |
 | --- | --- |
 | hot-spot pin positions (`_top` / `_left`) | the hotgraphic in `src/course/en/components.json` |
-| the video's file paths and captions | the `media` component |
 | the picture-answer images | the `gmcq` component |
 | player settings: drawer, audio, accessibility, spoor | `src/course/en/course.json`, `src/course/config.json` |
 
@@ -59,7 +58,9 @@ python tools/make_base_storyboard.py              # the storyboard
 python build.py base/Inputs --no-copy --apply     # rebuild this course from it
 ```
 
-Then set the hand-set values above again — `--apply` overwrites the JSON.
+The video is no longer one of them: the storyboard names it
+(`Video: sample.mp4, Poster: poster.png`, under Section 2.4), so the build wires
+it up. Then set the hand-set values above again — `--apply` overwrites the JSON.
 `_backups/<timestamp>/` holds the previous copy.
 
 ## What it must not become

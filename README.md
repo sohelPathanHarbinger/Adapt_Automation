@@ -239,6 +239,17 @@ one composed backdrop (`...-composite.jpg`) with a pin centred over each photo.
 
 **Other conventions read:**
 
+- **Key Concepts: accordion or video.** A `Video: <file>.mp4` line of its own
+  under the heading (styled `Programming-Note`) makes that chunk a video
+  component wired to that filename; with no such line it stays an accordion.
+  `Poster: <file>.png` on the same line or its own sets the poster frame.
+  The file need not have been delivered yet - the component is built and the
+  report says the file is still to come. Deliver videos, their `vtt/<name>.vtt`
+  captions and posters in `Inputs/<course>/assets/videos/`; they are copied
+  into the staged course, and anything named but missing, or delivered but
+  unused, is reported. A poster is taken from the name in the storyboard, else
+  `<video>-poster.png`, else the video's own first frame where ffmpeg or
+  imageio-ffmpeg is available, else the theme default.
 - A chapter's `Check Your Progress` / `Answers` promoted to `Heading 1` still
   belongs to the chapter above.
 - `Key Concepts (For Print)` is not built. `Key Concepts (For Programming)` is

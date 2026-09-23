@@ -2068,7 +2068,7 @@
     "_layout": "full",
     "title": "",
     "displayTitle": "",
-    "body": "<p>A narration table outside a Key Concepts page becomes a video component, wired to the file the video must be delivered under.</p>",
+    "body": "<p>A narration table becomes a video component. The line below names the file, which is also how a Key Concepts script is asked for as a video instead of an accordion - name no file and it stays an accordion.</p>",
     "instruction": "",
     "_onScreen": {
       "_isEnabled": false,

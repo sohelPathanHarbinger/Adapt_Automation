@@ -63,6 +63,11 @@ class InputCourse:
         return self._optional_dir(config.PLAYER_IMAGES_DIR)
 
     @property
+    def videos(self) -> Path | None:
+        """Videos delivered for this course, with their captions and posters."""
+        return self._optional_dir(f"assets/{config.MEDIA_SUBDIR}")
+
+    @property
     def theme_overlay(self) -> Path | None:
         """Files copied over the staged theme - the course's own branding."""
         return self._optional_dir(config.THEME_OVERLAY_DIR)

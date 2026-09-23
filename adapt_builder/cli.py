@@ -18,7 +18,7 @@ from . import config
 from .builders import build_all
 from .course_copy import DEFAULT_EXCLUDES, backup, clear_media, stage_course
 from .docx_reader import parse_storyboard
-from .docx_reader.images import extract_images, list_originals, write_images
+from .docx_reader.images import extract_images, first_frame, list_originals, write_images
 from .jsonio import write_json
 from .model import Storyboard
 from .paths import (
@@ -126,6 +126,95 @@ def overlay(source: Path, dest: Path, report: Report, what: str,
         copied += 1
     report.count(f"{what} files applied", copied)
     return copied
+
+
+def media_sources(files: dict, lang: str) -> set[str]:
+    """Every video path the built course refers to."""
+    return {
+        media.get("mp4", "")
+        for component in files.get(f"{lang}/components.json", [])
+        for media in [component.get("_media") or {}]
+        if media.get("mp4")
+    }
+
+
+def stage_media(course: InputCourse, media_dir: Path, files: dict, lang: str,
+                report: Report) -> int:
+    """Copy the course's delivered videos, captions and posters into the theme.
+
+    The storyboard names the file it wants ("Video: kc_chapter1.mp4"); the file
+    itself may arrive later, so anything still missing is reported rather than
+    holding up the build.
+    """
+    wanted = {Path(src).name for src in media_sources(files, lang)}
+    copied = 0
+    if course.videos is not None:
+        for path in sorted(p for p in course.videos.rglob("*") if p.is_file()):
+            if path.name.startswith((".", "~$")):
+                continue
+            target = media_dir / path.relative_to(course.videos)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(path, target)
+            copied += 1
+        report.count("delivered media file(s) staged", copied)
+        delivered = {p.name for p in course.videos.rglob("*") if p.is_file()}
+        for extra in sorted(delivered - wanted):
+            if extra.lower().endswith(config.VIDEO_SUFFIXES):
+                report.note(
+                    f"delivered video '{extra}' is not named by any storyboard "
+                    "chunk - it was staged but nothing plays it"
+                )
+
+    for name in sorted(wanted):
+        if not (media_dir / name).is_file():
+            report.warn(
+                f"video '{name}' is named in the storyboard but was not delivered "
+                f"- put it in Inputs/{course.name}/assets/{config.MEDIA_SUBDIR}/ "
+                "and rebuild; the component is wired to it either way"
+            )
+    return copied
+
+
+def resolve_posters(files: dict, media_dir: Path, lang: str, report: Report) -> None:
+    """Give every video the poster frame that is actually there.
+
+    In order: the poster the storyboard named, a file named after the video
+    ("kc_chapter1-poster.png"), the video's own first frame where a tool can
+    grab it, and finally the theme's default.
+    """
+    for component in files.get(f"{lang}/components.json", []):
+        media = component.get("_media") or {}
+        src = media.get("mp4")
+        if not src:
+            continue
+        poster = media.get("poster", "")
+        if poster and (media_dir.parent / Path(poster).relative_to("assets")).is_file():
+            continue  # the storyboard named it and it was delivered
+
+        stem = Path(src).stem
+        for suffix in config.POSTER_NAME_SUFFIXES:
+            for ext in config.POSTER_SUFFIXES:
+                candidate = media_dir / f"{stem}{suffix}{ext}"
+                if candidate.is_file():
+                    media["poster"] = f"{config.MEDIA_SRC_PREFIX}/{candidate.name}"
+                    report.note(f"poster for '{Path(src).name}': {candidate.name}")
+                    break
+            else:
+                continue
+            break
+        else:
+            video = media_dir / Path(src).name
+            grabbed = media_dir / f"{stem}-poster.png"
+            if video.is_file() and first_frame(video, grabbed):
+                media["poster"] = f"{config.MEDIA_SRC_PREFIX}/{grabbed.name}"
+                report.note(f"poster for '{video.name}': first frame grabbed")
+            else:
+                media["poster"] = config.MEDIA_POSTER
+                report.warn(
+                    f"no poster frame for '{Path(src).name}' - deliver "
+                    f"'{stem}-poster.png' beside the video, or name one in the "
+                    "storyboard (\"Poster: <file>\")"
+                )
 
 
 def write_course_json(files: dict, course_dir: Path) -> list[Path]:
@@ -284,6 +373,11 @@ def main(argv: list[str] | None = None) -> int:
         if course.theme_overlay is not None:
             n = overlay(course.theme_overlay, staged.theme, report, "theme overlay")
             print(f"  wrote  {n} theme file(s) -> {_show(staged.theme, out_root)}")
+
+    if not args.no_copy:
+        media_dir = staged.theme_assets / config.MEDIA_SUBDIR
+        stage_media(course, media_dir, files, base.lang, report)
+        resolve_posters(files, media_dir, base.lang, report)
 
     written = write_course_json(files, course_dir)
     for path in written:

@@ -330,8 +330,10 @@ def chapter_two(doc) -> None:
 
     doc.add_heading("Section 2.4: Video", 2)
     p(doc, "Normal",
-      "A narration table outside a Key Concepts page becomes a video component, "
-      "wired to the file the video must be delivered under.")
+      "A narration table becomes a video component. The line below names the "
+      "file, which is also how a Key Concepts script is asked for as a video "
+      "instead of an accordion - name no file and it stays an accordion.")
+    p(doc, "Programming-Note", "Video: sample.mp4, Poster: poster.png")
     table(doc, [
         ["Narration for Section 2.4 Presentation", "On Screen Text"],
         ["This is the voiceover script for the video.",

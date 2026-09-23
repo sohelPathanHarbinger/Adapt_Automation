@@ -236,6 +236,11 @@ class StoryboardParser:
         #: them as still to do.
         self.notes_done: set[str] = set()
         self.how_to_built = False
+        #: A "Video: <file>" line names the video a narration table becomes,
+        #: which is also how a Key Concepts script is asked for as a video
+        #: rather than an accordion. Cleared by the table it belongs to.
+        self.pending_video = ""
+        self.pending_poster = ""
 
     # ------------------------------------------------------------------
     # Pre-scan: the glossary table must be known before body copy renders,
@@ -908,8 +913,12 @@ class StoryboardParser:
         self._flush_all()
         narration, onscreen = tables.parse_narration(rows)
 
+        named, poster = self.pending_video, self.pending_poster
+        self.pending_video = self.pending_poster = ""
+
         if (
-            config.KEY_CONCEPTS_AS_ACCORDION
+            not named
+            and config.KEY_CONCEPTS_AS_ACCORDION
             and self._in_key_concepts()
             and self._build_key_concepts(rows, narration, onscreen)
         ):
@@ -926,7 +935,12 @@ class StoryboardParser:
             title = "Key Concepts"
             slug = f"{self.page.slug if self.page else 'course'}-key-concepts"
         component = Component(kind="media", title=title, display_title="")
-        component.extra["src"] = f"{config.MEDIA_SRC_PREFIX}/{slug}.mp4"
+        component.extra["src"] = (
+            f"{config.MEDIA_SRC_PREFIX}/{named}" if named
+            else f"{config.MEDIA_SRC_PREFIX}/{slug}.mp4"
+        )
+        if poster:
+            component.extra["poster"] = f"{config.MEDIA_SRC_PREFIX}/{poster}"
         component.extra["narration"] = narration
         component.extra["onscreen"] = onscreen
         self._add_component(component)
@@ -1286,6 +1300,9 @@ class StoryboardParser:
         if style in config.STYLE_CYP_QUESTIONS:
             style = config.STYLE_CYP_QUESTION
 
+        if self.mode != "answers" and self._handle_media_line(raw):
+            return
+
         if (
             style in config.STYLE_PROGRAMMING_NOTE
             and self.mode != "answers"
@@ -1383,6 +1400,32 @@ class StoryboardParser:
     # ------------------------------------------------------------------
     # Structure starts
     # ------------------------------------------------------------------
+
+    def _handle_media_line(self, raw: str) -> bool:
+        """Read a "Video: <file>" / "Poster: <file>" line, if that is what it is.
+
+        Naming a video is how a Key Concepts script is asked for as a video
+        instead of an accordion. The file itself need not have been delivered
+        yet - the component is built either way and the report says so.
+        """
+        video = _named_file(raw, config.VIDEO_LINE_PREFIXES, config.VIDEO_SUFFIXES)
+        poster = _named_file(raw, config.POSTER_LINE_PREFIXES, config.POSTER_SUFFIXES)
+        if video:
+            self.pending_video = video
+            # "Video: a.mp4, Poster: a.png" states both on one line.
+            tail = raw.split(",", 1)[1] if "," in raw else ""
+            poster = poster or _named_file(
+                tail, config.POSTER_LINE_PREFIXES, config.POSTER_SUFFIXES
+            )
+        if poster:
+            self.pending_poster = poster
+        if video or poster:
+            self.report.note(
+                f"storyboard names its own media on page "
+                f"'{self.page.title if self.page else '?'}': "
+                + ", ".join(part for part in (video, poster) if part)
+            )
+        return bool(video or poster)
 
     def _start_page(self, title: str) -> None:
         if (
@@ -1900,6 +1943,21 @@ def _unwrap_bold(html: str) -> str:
     if match and "<strong>" not in match.group(1):
         return match.group(1).strip()
     return html
+
+
+def _named_file(raw: str, prefixes: tuple[str, ...], suffixes: tuple[str, ...]) -> str:
+    """The filename in a "Video: name.mp4" line, or "" if it is not one."""
+    for part in re.split(r"[;|]", raw):
+        text = part.strip().strip("[](){}").strip()
+        lowered = text.lower()
+        for prefix in prefixes:
+            if not lowered.startswith(prefix):
+                continue
+            name = text[len(prefix):].strip().strip("\"'").strip()
+            name = name.split(",")[0].strip()
+            if name.lower().endswith(suffixes):
+                return name
+    return ""
 
 
 def _heading_level(style: str) -> int:

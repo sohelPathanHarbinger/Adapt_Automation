@@ -22,56 +22,13 @@ DEST = ROOT / "Documentation" / "Template_Reference"
 GUIDE_DIR = DEST / "guide"
 
 # --------------------------------------------------------------------------
-# Styles the parser reads. Creating them here is what makes these documents
-# usable as templates: an author copies one and the styles are already there.
+# Styles the parser reads and the small builders both documents use live in
+# tools/storyboard_docx.py, so this guide and the base storyboard can never
+# describe different conventions.
 # --------------------------------------------------------------------------
 
-PARAGRAPH_STYLES = [
-    ("Interactivity-Heading-1", 12, True, "1F4E79"),
-    ("Interactivity-Heading-2", 11, True, "2E74B5"),
-    ("Interactivity-body", 11, False, None),
-    ("Interactivity-Bullet-1", 11, False, None),
-    ("Interactive-bullet-2", 10, False, None),
-    ("Interactivity-Label", 9, False, "595959"),
-    ("CYP-Question", 11, True, None),
-    ("CYP - Answer", 11, False, None),
-    ("CYP - TrueFalse", 11, False, None),
-    ("Bullet list level 1", 11, False, None),
-    ("Bullet list level 2", 10, False, None),
-    ("Number bullet list 1", 11, False, None),
-    ("Diagram label 1", 9, True, "595959"),
-    ("footnote/diagram label", 9, True, "595959"),
-    ("il Reference", 9, False, "595959"),
-    ("Refrence text", 9, False, "C00000"),
-]
-
-CHARACTER_STYLES = [
-    ("Glossary item Char", "1F7A3D", True),
-    ("Refrence text Char", "C00000", False),
-    ("Programming-Notes", "7030A0", False),
-]
-
-
-def ensure_styles(doc: Document) -> None:
-    styles = doc.styles
-    existing = {s.name for s in styles}
-
-    for name, size, bold, colour in PARAGRAPH_STYLES:
-        if name in existing:
-            continue
-        st = styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
-        st.base_style = styles["Normal"]
-        st.font.size = Pt(size)
-        st.font.bold = bold
-        if colour:
-            st.font.color.rgb = RGBColor.from_string(colour)
-
-    for name, colour, bold in CHARACTER_STYLES:
-        if name in existing:
-            continue
-        st = styles.add_style(name, WD_STYLE_TYPE.CHARACTER)
-        st.font.color.rgb = RGBColor.from_string(colour)
-        st.font.bold = bold
+sys.path.insert(0, str(ROOT / "tools"))
+from storyboard_docx import ensure_styles, p, runs, table  # noqa: E402
 
 
 def _sample_image() -> Path:
@@ -102,50 +59,6 @@ def _sample_image() -> Path:
     out = Path(__file__).with_name("_sample_figure.png")
     out.write_bytes(png)
     return out
-
-
-def p(doc, style, text=""):
-    """One paragraph in a named style."""
-    para = doc.add_paragraph(style=style)
-    if text:
-        para.add_run(text)
-    return para
-
-
-def runs(doc, style, parts):
-    """A paragraph built from (text, character-style-or-None) pairs."""
-    para = doc.add_paragraph(style=style)
-    for text, char in parts:
-        run = para.add_run(text)
-        if char:
-            run.style = doc.styles[char]
-    return para
-
-
-def table(doc, rows, header=True):
-    """Build a table. A cell given as a list holds one paragraph per entry,
-    each optionally ``(style, text)`` - which is how a Key Concepts panel
-    carries its topic line and then its bullets."""
-    t = doc.add_table(rows=len(rows), cols=len(rows[0]))
-    t.style = "Table Grid"
-    for r, row in enumerate(rows):
-        for c, cell in enumerate(row):
-            if isinstance(cell, (list, tuple)):
-                target = t.rows[r].cells[c]
-                for n, entry in enumerate(cell):
-                    style, text = entry if isinstance(entry, tuple) else (None, entry)
-                    para = target.paragraphs[0] if n == 0 else target.add_paragraph()
-                    para.text = str(text)
-                    if style:
-                        para.style = doc.styles[style]
-                continue
-            t.rows[r].cells[c].text = str(cell)
-            if r == 0 and header:
-                for para in t.rows[r].cells[c].paragraphs:
-                    for run in para.runs:
-                        run.bold = True
-    doc.add_paragraph()
-    return t
 
 
 # ==========================================================================
@@ -259,13 +172,34 @@ def build_guide(path: Path) -> None:
         ["Data", "Anything else", "An HTML table in the copy that introduces it"],
     ])
 
-    doc.add_heading("7. What the build cannot do for you", 1)
+    doc.add_heading("7. Videos", 1)
+    doc.add_paragraph(
+        "A narration table becomes a video component. Name the file on a line "
+        "of its own above the table, styled Programming-Note:"
+    )
+    p(doc, "Bullet list level 1", "Video: kc_chapter1.mp4")
+    p(doc, "Bullet list level 1", "Video: kc_chapter1.mp4, Poster: kc_chapter1-cover.png")
+    doc.add_paragraph(
+        "On a Key Concepts page this is also how the chunk is asked for as a "
+        "video: name a file and it becomes one; name none and it stays an "
+        "accordion. The file need not exist yet - the component is wired to it "
+        "and the report says the file is still to come."
+    )
+    doc.add_paragraph(
+        "Deliver the video, its captions and its poster in "
+        "Inputs/<course>/assets/videos/ - captions as vtt/<name>.vtt. The build "
+        "copies them in, and reports anything named but missing, or delivered "
+        "but unused. Without a poster it uses <name>-poster.png, then the "
+        "video's first frame where ffmpeg is available, then the theme default."
+    )
+
+    doc.add_heading("8. What the build cannot do for you", 1)
     p(doc, "Bullet list level 1",
       "Hotgraphic pin positions - authored in base/Source and read back from there.")
     p(doc, "Bullet list level 1",
-      "Key Concepts videos - the build wires up the filename and prints the script. "
-      "On a Key Concepts page the script becomes an accordion instead, and the "
-      "narration is published for whoever records the voiceover.")
+      "Recording the Key Concepts voiceover - the build wires up the filename and "
+      "publishes the script. A Key Concepts chunk is an accordion unless the "
+      "storyboard names a video for it (see 7).")
     p(doc, "Bullet list level 1",
       "Images inside gmcq / graphic slider options - the paths are left empty.")
 
@@ -408,6 +342,7 @@ def build_storyboard(path: Path) -> None:
 
     doc.add_heading("Section 3.1: Narration", 2)
     p(doc, "Normal", "The table below is a video script, not learner copy.")
+    p(doc, "Programming-Note", "Video: section-3-1.mp4, Poster: section-3-1-poster.png")
     table(doc, [
         ["Narration for Section 3.1 Presentation", "On Screen Text"],
         ["This is what the voiceover says.", "This is what appears on screen."],

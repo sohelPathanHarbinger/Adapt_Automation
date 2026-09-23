@@ -27,7 +27,8 @@ course and is passed over.
 | `assets/images/Player/` | Overwrites the theme file at the same path under `assets/GUI`. A file with no counterpart there is reported and skipped. |
 | `theme/` | Copied over the staged theme. `less/zz-course-theme.less` sorts last, so it can redefine the palette without touching `base/Source`. |
 | `reference/` | Ignored by the build. Keep the Figma file and the original storyboard here. |
-| `assets/videos`, `assets/audios` | **Not read by the build.** Media is delivered into the staged course's theme by hand; these files are the ones `base/Source` uses. |
+| `assets/videos` | Videos the course delivers, their `vtt/<name>.vtt` captions and posters. The build copies them into the staged course and wires up whatever the storyboard named (`Video: <file>.mp4`). |
+| `assets/audios` | Not read by the build; delivered into the staged course by hand. |
 
 ## The sample media
 

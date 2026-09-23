@@ -75,11 +75,18 @@ def build(component: Component, ctx: Ctx) -> dict:
     data["_startVolume"] = "80%"
     data["_aspectRatio"] = "landscape"
     data["_offsetMediaControls"] = False
+    stem = src.rsplit("/", 1)[-1].rsplit(".", 1)[0]
     data["_media"] = {
         "mp4": src,
         "ogv": src,
-        "poster": config.MEDIA_POSTER,
-        "cc": [{"srclang": "en", "src": ""}],
+        # The storyboard's own poster, else one named after the video, else the
+        # theme's default. Whichever file is actually delivered wins at staging.
+        "poster": component.extra.get("poster") or config.MEDIA_POSTER,
+        "cc": [{
+            "srclang": "en",
+            "src": f"{config.MEDIA_SRC_PREFIX}/{config.MEDIA_CC_SUBDIR}/{stem}.vtt"
+            if stem else "",
+        }],
     }
     data["_transcript"] = {
         "_setCompletionOnView": False,

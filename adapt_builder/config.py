@@ -249,6 +249,21 @@ TABLE_ONSCREEN_HEADERS = ("on screen text", "on-screen text", "onscreen text")
 MEDIA_SUBDIR = "videos"
 MEDIA_SRC_PREFIX = "assets/videos"
 MEDIA_POSTER = "assets/videos/poster.png"
+#: Captions sit beside the video, in this sub-folder, named after it.
+MEDIA_CC_SUBDIR = "vtt"
+
+#: A Key Concepts script is built as an accordion (KEY_CONCEPTS_AS_ACCORDION)
+#: unless the storyboard names a video for it, on a line of its own under the
+#: heading: "Video: BBIO1560_KC_Chapter1.mp4". Naming a file that has not been
+#: delivered yet is deliberate - the component is built and the report says the
+#: file is still to come. "Poster: <file>" on the same line, or on one of its
+#: own, sets the poster frame.
+VIDEO_LINE_PREFIXES = ("video:", "video file:", "kc video:", "media:")
+POSTER_LINE_PREFIXES = ("poster:", "poster frame:", "poster image:")
+VIDEO_SUFFIXES = (".mp4", ".m4v", ".webm", ".ogv", ".ogg", ".mov")
+POSTER_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp")
+#: Tried after the storyboard's own name: "<video stem>-poster.png" and friends.
+POSTER_NAME_SUFFIXES = ("-poster", "_poster", "")
 
 #: A matching question's table pairs a list of things with lettered stems.
 #: The letter column is what the Answers copy of the table fills in.

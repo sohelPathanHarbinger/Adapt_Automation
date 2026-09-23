@@ -550,6 +550,36 @@ def compose_stack(blobs: list[bytes]) -> bytes:
     return buffer.getvalue()
 
 
+def first_frame(video: Path, out: Path) -> bool:
+    """Grab a video's first frame as the poster, if a tool is available.
+
+    Nothing here is a hard dependency: ffmpeg on PATH is used when present,
+    then imageio-ffmpeg if it is installed. Without either, the caller falls
+    back to the poster the storyboard named or the theme's default.
+    """
+    import shutil as _shutil
+    import subprocess
+
+    exe = _shutil.which("ffmpeg")
+    if exe is None:
+        try:
+            import imageio_ffmpeg
+
+            exe = imageio_ffmpeg.get_ffmpeg_exe()
+        except Exception:
+            return False
+    out.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        subprocess.run(
+            [exe, "-y", "-loglevel", "error", "-i", str(video),
+             "-frames:v", "1", str(out)],
+            check=True, timeout=120,
+        )
+    except Exception:
+        return False
+    return out.is_file()
+
+
 def write_images(records: list[ImageRecord], out_dir: Path) -> int:
     """Write each distinct bitmap once into ``out_dir``. Returns files written."""
     out_dir.mkdir(parents=True, exist_ok=True)
