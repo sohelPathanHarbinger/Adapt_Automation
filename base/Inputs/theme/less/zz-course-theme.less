@@ -73,8 +73,14 @@
 // table th { background-color: @brand-primary !important; color: @white !important; }
 // table td { background-color: @brand-tint; }
 // .subhead { background: @brand-neutral !important; color: @brand-text !important; }
-// .tabs__nav-item-btn.is-visited,
-// .accordion-item__btn.is-visited { background: @brand-tint; color: @brand-text; }
+// Tabs and accordions. The open one carries is-visited as well as
+// is-selected, and this file sorts last - so a visited rule without
+// :not(.is-selected) paints the open tab too and undoes the theme's
+// selected state.
+// .tabs__nav-item-btn.is-visited:not(.is-selected),
+// .accordion-item__btn.is-visited:not(.is-selected) { background: @brand-tint; color: @brand-text; }
+// .tabs__nav-item-btn.is-selected { background: @brand-primary; color: @white; }
+// .no-touch .tabs__nav-item-btn:not(.is-selected):hover { background: @brand-primary; color: @white; }
 // .mcq-item__label { color: @brand-primary; }
 // .no-touch .btn__action:not(.is-disabled):not(.is-locked):hover { background: @brand-primary; }
 // .no-touch .drawer__item-btn:not(.is-disabled):not(.is-locked):hover { background: @brand-primary; }
